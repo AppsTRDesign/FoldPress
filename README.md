@@ -190,7 +190,7 @@ FoldPress works fully offline. Optional features talk to third parties **only wh
 
 ## Changelog
 
-See [`readme.txt`](../appstrdesign-foldpress/readme.txt) for the full changelog.
+See [`readme.txt`](appstrdesign-foldpress/readme.txt) for the full changelog.
 
 ## License
 
