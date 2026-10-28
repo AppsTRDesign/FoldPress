@@ -190,7 +190,7 @@ FoldPress tamamen çevrimdışı çalışır. İsteğe bağlı özellikler **yal
 
 ## Değişiklik günlüğü
 
-Tam değişiklik günlüğü için [`readme.txt`](../appstrdesign-foldpress/readme.txt) dosyasına bakın.
+Tam değişiklik günlüğü için [`readme.txt`](appstrdesign-foldpress/readme.txt) dosyasına bakın.
 
 ## Lisans
 
