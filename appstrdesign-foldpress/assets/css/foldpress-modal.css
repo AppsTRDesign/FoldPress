@@ -1,0 +1,148 @@
+/* FoldPress - wp.media modal integration. Mobile: toolbar select. Desktop (>=901px): folder panel. */
+.afp-mm-i { width: 16px; height: 16px; flex: 0 0 auto; fill: none; stroke: currentColor; stroke-width: 1.4; stroke-linecap: round; stroke-linejoin: round; }
+.afp-mm-panel { display: none; }
+.media-toolbar-secondary .afp-mm-select { max-width: 100%; }
+
+/*
+ * Modal layout. Core positions the toolbar, the grid and the drop zone absolutely inside .attachments-browser
+ * (width:100%, overflow:hidden). The browser stays put; only the absolutely positioned children are shifted
+ * by the panel width. Which element is absolute depends on core's mode: with "Load more" it is
+ * .attachments-wrapper, with infinite scrolling (and in gallery / featured image states) it is the
+ * .attachments list inside the wrapper. Both cases are covered, mirroring core's own selectors.
+ */
+@media (min-width: 901px) {
+	.media-modal .attachments-browser.afp-mm { --afp-mm-w: 248px; }
+	.media-modal .afp-mm-select { display: none !important; }
+	.media-modal .media-frame-content:has(> .attachments-browser.afp-mm) { overflow: hidden; }
+	.media-modal .attachments-browser.afp-mm > .media-toolbar,
+	.media-modal .attachments-browser.afp-mm.has-load-more .attachments-wrapper,
+	.media-modal .attachments-browser.afp-mm:not(.has-load-more) .attachments,
+	.media-modal .attachments-browser.afp-mm .uploader-inline,
+	.media-modal .attachments-browser.afp-mm > .media-views-heading { left: var(--afp-mm-w) !important; }
+	/* The list inside a positioned wrapper must stay in normal flow. */
+	.media-modal .attachments-browser.afp-mm.has-load-more .attachments-wrapper .attachments { left: auto !important; }
+	.media-modal .attachments-browser.afp-mm .attachments-wrapper,
+	.media-modal .attachments-browser.afp-mm .attachments { overflow-x: hidden; }
+	.media-modal .attachments-browser.afp-mm > .afp-mm-panel {
+		position: absolute; top: 0; bottom: 0; left: 0; width: var(--afp-mm-w); z-index: 30;
+		display: flex; flex-direction: column; background: #f8f9fc; border-right: 1px solid #e4e7ef;
+	}
+}
+/* Classic library grid screen (upload.php?mode=grid): panel is a normal left sidebar, the grid flows next to it. */
+@media (min-width: 901px) {
+	.media-frame.mode-grid .attachments-browser.afp-mm { position: relative; padding-left: 236px; min-height: 480px; }
+	.media-frame.mode-grid .attachments-browser.afp-mm > .afp-mm-panel {
+		position: absolute; top: 0; left: 0; bottom: 0; width: 220px; z-index: 2;
+		display: flex; flex-direction: column; background: #fff; border: 1px solid #e4e7ef; border-radius: 14px; overflow: hidden;
+	}
+	.media-frame.mode-grid .attachments-browser.afp-mm > .media-toolbar { margin-left: 0; }
+}
+.media-frame.mode-grid .afp-mm-select { display: none !important; }
+@media (max-width: 900px) {
+	.media-frame.mode-grid .afp-mm-panel { display: none !important; }
+	.media-frame.mode-grid .afp-mm-select { display: inline-block !important; }
+}
+
+/* Panel */
+.afp-mm-panel { box-sizing: border-box; min-width: 0; font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+.afp-mm-panel * { box-sizing: border-box; }
+.afp-mm-head { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 16px 12px 10px 16px; }
+.afp-mm-head strong { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: #6b7385; }
+.afp-mm-btn { display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; padding: 0; border: 1px solid #d9dde8; border-radius: 9px; background: #fff; color: #3b4258; cursor: pointer; box-shadow: 0 1px 2px rgba(16, 24, 40, .05); transition: border-color .15s, color .15s, background .15s; }
+.afp-mm-btn:hover { border-color: #4f46e5; color: #4f46e5; background: #f5f5ff; }
+.afp-mm-btn:focus-visible { outline: 2px solid #4f46e5; outline-offset: 2px; }
+.afp-mm-new { padding: 0 12px 10px; }
+.afp-mm-new input, .afp-mm-search input {
+	width: 100%; min-height: 36px; margin: 0; padding: 0 10px; border: 1px solid #d9dde8; border-radius: 9px; background: #fff;
+	font-size: 13px; color: #161b2e; box-shadow: 0 1px 2px rgba(16, 24, 40, .04);
+}
+.afp-mm-new input:focus, .afp-mm-search input:focus { border-color: #4f46e5; box-shadow: 0 0 0 3px rgba(79, 70, 229, .16); outline: none; }
+.afp-mm-new[data-error] input { border-color: #dc2626; }
+.afp-mm-search { position: relative; display: block; margin: 0 12px 8px; }
+.afp-mm-search .afp-mm-i { position: absolute; left: 10px; top: 50%; width: 14px; height: 14px; transform: translateY(-50%); color: #8a91a5; pointer-events: none; }
+.afp-mm-panel .afp-mm-search input { padding-left: 32px; }
+.afp-mm-tree { flex: 1; min-height: 0; overflow-x: hidden; overflow-y: auto; padding: 0 8px 10px; scrollbar-width: thin; }
+.afp-mm-sep { height: 1px; margin: 6px 8px; background: #e4e7ef; }
+.afp-mm-row { position: relative; display: flex; align-items: center; min-height: 34px; margin: 1px 0; padding-left: calc(var(--d, 0) * 14px); border-radius: 8px; }
+.afp-mm-row::before { content: ""; position: absolute; top: 0; bottom: 0; left: calc(var(--d, 0) * 14px - 5px); border-left: 1px solid #dfe3ec; display: var(--afp-mm-line, none); }
+.afp-mm-row[style*="--d:1"], .afp-mm-row[style*="--d:2"], .afp-mm-row[style*="--d:3"], .afp-mm-row[style*="--d:4"], .afp-mm-row[style*="--d:5"] { --afp-mm-line: block; }
+.afp-mm-tog { display: inline-grid; place-items: center; flex: 0 0 20px; width: 20px; height: 20px; padding: 0; border: 0; border-radius: 5px; background: none; color: #8a91a5; cursor: pointer; }
+.afp-mm-tog .afp-mm-i { width: 12px; height: 12px; transition: transform .15s; }
+.afp-mm-tog.is-open .afp-mm-i { transform: rotate(90deg); }
+.afp-mm-tog:hover { background: #e8eaf3; color: #161b2e; }
+.afp-mm-tog.is-leaf { cursor: default; }
+.afp-mm-row.is-sys .afp-mm-tog { flex-basis: 4px; width: 4px; }
+.afp-mm-go {
+	flex: 1; min-width: 0; display: flex; align-items: center; gap: 8px; min-height: 34px; padding: 0 8px; margin: 0;
+	border: 1px dashed transparent; border-radius: 8px; background: none; color: #2b3145; font: inherit; font-size: 13px; text-align: left; cursor: pointer;
+	transition: background .12s, color .12s;
+}
+.afp-mm-go span { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.afp-mm-go small { flex: 0 0 auto; min-width: 22px; padding: 1px 7px; border-radius: 99px; background: #eceef5; color: #6b7385; font-size: 11px; font-weight: 600; text-align: center; }
+.afp-mm-go .afp-mm-i { color: #6b7385; }
+.afp-mm-go .afp-mm-i.is-folder { color: #e8a50c; fill: #fde68a; }
+.afp-mm-go:hover { background: #eceef5; }
+.afp-mm-go:focus-visible { outline: 2px solid #4f46e5; outline-offset: -2px; }
+.afp-mm-row.is-active .afp-mm-go { background: #eef0ff; color: #4338ca; font-weight: 650; box-shadow: inset 3px 0 0 #4f46e5; }
+.afp-mm-row.is-active .afp-mm-go .afp-mm-i { color: #4f46e5; }
+.afp-mm-row.is-active .afp-mm-go .afp-mm-i.is-folder { fill: #c7d2fe; }
+.afp-mm-row.is-active .afp-mm-go small { background: #4f46e5; color: #fff; }
+.afp-mm-go.is-drop { background: #e0e7ff; border-color: #4f46e5; }
+.afp-mm-dragging .afp-mm-row:not(.is-sys) .afp-mm-go, .afp-mm-dragging .afp-mm-go[data-afp-folder="0"] { border-color: #c7cbff; }
+.afp-mm-skel { height: 26px; margin: 6px 8px; border-radius: 7px; background: linear-gradient(90deg, #eceef5 25%, #f6f7fb 50%, #eceef5 75%) 0 0 / 200% 100%; animation: afp-mm-skel 1.2s linear infinite; }
+.afp-mm-skel:nth-child(2n) { width: 70%; margin-left: 22px; }
+@keyframes afp-mm-skel { to { background-position: -200% 0; } }
+.afp-mm-empty { margin: 10px; color: #8a91a5; font-size: 12px; text-align: center; }
+.afp-mm-panel.is-busy { opacity: .6; pointer-events: none; }
+.afp-mm-foot { display: grid; gap: 6px; padding: 10px 12px 12px; border-top: 1px solid #e4e7ef; background: #f3f4f9; }
+.afp-mm-target { display: flex; align-items: center; gap: 8px; min-width: 0; padding: 8px 10px; border-radius: 10px; background: #fff; box-shadow: inset 0 0 0 1px #e4e7ef; }
+.afp-mm-target .afp-mm-i { color: #4f46e5; }
+.afp-mm-target span { display: grid; min-width: 0; line-height: 1.3; }
+.afp-mm-target small { font-size: 10.5px; color: #8a91a5; text-transform: uppercase; letter-spacing: .05em; }
+.afp-mm-target b { font-size: 12.5px; font-weight: 600; color: #161b2e; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.afp-mm-manage { display: inline-flex; align-items: center; gap: 6px; padding: 4px 2px; color: #4f46e5; font-size: 12px; font-weight: 600; text-decoration: none; }
+.afp-mm-manage:hover { color: #3730a3; text-decoration: underline; }
+.afp-mm-manage .afp-mm-i { width: 13px; height: 13px; }
+
+/* FoldPress file icons and quick actions on library items */
+/* Core centres the icon with .centered (translate 50%) + img (translate -50%); the replacement mirrors the img. */
+.attachment .afp-mm-ficon { position: absolute; top: 0; left: 0; display: grid; place-items: center; width: 100%; height: 100%; padding-bottom: 30px; box-sizing: border-box; transform: translate(-50%, -50%); }
+.attachment .afp-mm-ficon .afp-ficon { width: 42%; max-width: 64px; height: auto; filter: drop-shadow(0 6px 10px rgba(16, 24, 40, .12)); }
+.attachment.afp-mm-hasicon .attachment-preview { background: linear-gradient(180deg, #fbfbfe, #f1f3f9); }
+.afp-mm-acts { position: absolute; left: 6px; top: 6px; z-index: 5; display: flex; gap: 4px; opacity: 0; transform: translateY(-4px); transition: opacity .15s, transform .15s; }
+.attachment:hover .afp-mm-acts, .attachment:focus-within .afp-mm-acts { opacity: 1; transform: none; }
+.afp-mm-act { display: grid; place-items: center; width: 28px; height: 28px; padding: 0; border: 0; border-radius: 8px; background: rgba(255, 255, 255, .95); color: #2b3145; cursor: pointer; box-shadow: 0 2px 8px rgba(16, 24, 40, .2); transition: background .12s, color .12s; }
+.afp-mm-act .afp-mm-i { width: 14px; height: 14px; }
+.afp-mm-act:hover { background: #4f46e5; color: #fff; }
+.afp-mm-act:focus-visible { outline: 2px solid #4f46e5; outline-offset: 1px; opacity: 1; }
+@media (hover: none) { .afp-mm-acts { opacity: 1; transform: none; } }
+
+/* Insert from URL extras */
+.afp-mm-urlbar { order: 9; flex: 1 1 100%; display: grid; gap: 10px; margin-top: 10px; font-size: 13px; }
+.afp-mm-urlhint { margin: 0; color: #6b7385; font-size: 12.5px; line-height: 1.5; }
+.afp-mm-urlimp { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; }
+.afp-mm-urlimp small { color: #8a91a5; font-size: 12px; }
+.afp-mm-impbtn { display: inline-flex; align-items: center; gap: 8px; min-height: 38px; padding: 0 14px; border: 1px solid #c7cbff; border-radius: 10px; background: #f5f5ff; color: #4338ca; font: inherit; font-size: 13px; font-weight: 600; cursor: pointer; transition: background .15s, border-color .15s; }
+.afp-mm-impbtn:hover { background: #eef0ff; border-color: #4f46e5; }
+.afp-mm-impbtn:disabled { opacity: .6; cursor: progress; }
+.afp-mm-impbtn.is-busy .afp-mm-i { animation: afp-mm-bob .9s ease-in-out infinite; }
+@keyframes afp-mm-bob { 50% { transform: translateY(2px); } }
+.afp-mm-impmsg { flex: 1 1 100%; display: block; font-size: 12.5px; }
+.afp-mm-impmsg:empty { display: none; }
+.afp-mm-impmsg.is-busy, .afp-mm-impmsg.is-ok, .afp-mm-impmsg.is-err { padding: 8px 12px; border-radius: 10px; }
+.afp-mm-impmsg.is-busy { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; background: #eef0ff; color: #4338ca; }
+.afp-mm-impmsg.is-ok { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; }
+.afp-mm-imptxt { flex: 1; min-width: 0; overflow-wrap: anywhere; font-variant-numeric: tabular-nums; }
+.afp-mm-impstop { padding: 3px 10px; border: 1px solid #c7cbff; border-radius: 8px; background: #fff; color: #4338ca; font: inherit; font-size: 12px; font-weight: 600; cursor: pointer; }
+.afp-mm-impstop:hover { border-color: #dc2626; color: #dc2626; }
+.afp-mm-impstop:disabled { opacity: .5; cursor: default; }
+.afp-mm-impbar { flex: 1 1 100%; display: block; height: 6px; border-radius: 99px; background: #dfe2ff; overflow: hidden; }
+.afp-mm-impbar em { display: block; height: 100%; border-radius: inherit; background: linear-gradient(90deg, #6366f1, #8b5cf6); transition: width .5s ease; }
+.afp-mm-impbar.is-indet em { width: 35% !important; animation: afp-mm-indet 1.2s ease-in-out infinite; }
+@keyframes afp-mm-indet { 0% { transform: translateX(-100%); } 100% { transform: translateX(300%); } }
+.afp-mm-impmsg.is-ok { background: #ecfdf5; color: #047857; }
+.afp-mm-impmsg.is-err { background: #fef2f2; color: #b91c1c; }
+.afp-mm-showlib { margin-left: 0; padding: 0; border: 0; background: none; color: inherit; font: inherit; font-weight: 700; text-decoration: underline; cursor: pointer; }
+@media (prefers-reduced-motion: reduce) {
+	.afp-mm-skel, .afp-mm-impbtn .afp-mm-i, .afp-mm-impbar em, .afp-mm-acts, .afp-mm-tog .afp-mm-i { animation: none !important; transition: none !important; }
+}

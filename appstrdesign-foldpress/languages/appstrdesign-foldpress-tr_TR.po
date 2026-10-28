@@ -1,0 +1,1841 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: AppsTRDesign - FoldPress 1.0.0\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nX-Domain: appstrdesign-foldpress\nLanguage: tr_TR\nPlural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Advanced AJAX media file manager with folders, drag and drop, bulk actions, context menu, ZIP/UNZIP and file type grouping. Replaces the default Media Library screens."
+msgstr "Klasörler, sürükle bırak, toplu işlemler, sağ tık menüsü, ZIP/UNZIP ve dosya türü gruplandırma içeren gelişmiş AJAX ortam dosya yöneticisi. Varsayılan Ortam Kütüphanesi ekranlarının yerini alır."
+
+msgid "AppsTRDesign - FoldPress"
+msgstr "AppsTRDesign - FoldPress"
+
+msgid "Folders"
+msgstr "Klasörler"
+
+msgid "OK"
+msgstr "Tamam"
+
+msgid "Cancel"
+msgstr "İptal"
+
+msgid "Close"
+msgstr "Kapat"
+
+msgid "Error"
+msgstr "Hata"
+
+msgid "Success"
+msgstr "Başarılı"
+
+msgid "Network error. Please try again."
+msgstr "Ağ hatası. Lütfen tekrar deneyin."
+
+msgid "URL copied to clipboard."
+msgstr "URL panoya kopyalandı."
+
+msgid "Press Enter to confirm, Esc to cancel"
+msgstr "Onaylamak için Enter, iptal için Esc"
+
+msgid "Download"
+msgstr "İndir"
+
+msgid "Delete"
+msgstr "Sil"
+
+msgid "Delete files permanently?"
+msgstr "Dosyalar kalıcı olarak silinsin mi?"
+
+msgid "Size"
+msgstr "Boyut"
+
+msgid "Root (no folder)"
+msgstr "Kök (klasörsüz)"
+
+msgid "Preview"
+msgstr "Önizle"
+
+msgid "Open in new tab"
+msgstr "Yeni sekmede aç"
+
+msgid "Preview could not be loaded."
+msgstr "Önizleme yüklenemedi."
+
+msgid "Quick view"
+msgstr "Hızlı görünüm"
+
+msgid "Full layout"
+msgstr "Tam düzen"
+
+msgid "Slide"
+msgstr "Slayt"
+
+msgid "This slide has no text."
+msgstr "Bu slaytta metin yok."
+
+msgid "Only the beginning of this file is shown."
+msgstr "Dosyanın yalnızca başlangıcı gösteriliyor."
+
+msgid "First %d rows are shown."
+msgstr "İlk %d satır gösteriliyor."
+
+msgid "%d items in this archive"
+msgstr "Bu arşivde %d öğe var"
+
+msgid "No preview available for this file type."
+msgstr "Bu dosya türü için önizleme yok."
+
+msgid "Quick view shows the text and tables. Layout, images and fonts may differ from the original."
+msgstr "Hızlı görünüm metin ve tabloları gösterir. Düzen, görseller ve yazı tipleri orijinalden farklı olabilir."
+
+msgid "Change history"
+msgstr "Değişiklik geçmişi"
+
+msgid "This file has not been renamed yet."
+msgstr "Bu dosya henüz yeniden adlandırılmadı."
+
+msgid "Choose a version to go back to. If the file was renamed on the server, it is renamed back and every link in the database is updated."
+msgstr "Geri dönmek istediğiniz sürümü seçin. Dosya sunucuda yeniden adlandırıldıysa eski adına döndürülür ve veritabanındaki tüm bağlantılar güncellenir."
+
+msgid "Current version"
+msgstr "Şu anki sürüm"
+
+msgid "Go back to this version"
+msgstr "Bu sürüme dön"
+
+msgid "Title"
+msgstr "Başlık"
+
+msgid "File name"
+msgstr "Dosya adı"
+
+msgid "Renamed - show history"
+msgstr "Yeniden adlandırıldı - geçmişi göster"
+
+msgid "Renamed"
+msgstr "Yeniden adlandırıldı"
+
+msgid "Title changed"
+msgstr "Başlık değişti"
+
+msgid "Details panel"
+msgstr "Ayrıntılar paneli"
+
+msgid "Advanced edit"
+msgstr "Gelişmiş düzenleme"
+
+msgid "Restored"
+msgstr "Geri yüklendi"
+
+msgid "Media Library"
+msgstr "Ortam Kütüphanesi"
+
+msgid "Library"
+msgstr "Kütüphane"
+
+msgid "Open File Manager"
+msgstr "Dosya Yöneticisini Aç"
+
+msgid "Settings"
+msgstr "Ayarlar"
+
+msgid "All Files"
+msgstr "Tüm Dosyalar"
+
+msgid "Uncategorized"
+msgstr "Klasörsüz"
+
+msgid "New Folder"
+msgstr "Yeni Klasör"
+
+msgid "New Subfolder"
+msgstr "Yeni Alt Klasör"
+
+msgid "Folder name"
+msgstr "Klasör adı"
+
+msgid "The folder is created inside the folder you are viewing."
+msgstr "Klasör, görüntülediğiniz klasörün içinde oluşturulur."
+
+msgid "Create"
+msgstr "Oluştur"
+
+msgid "Save"
+msgstr "Kaydet"
+
+msgid "Rename"
+msgstr "Yeniden adlandır"
+
+msgid "Move to"
+msgstr "Taşı"
+
+msgid "Move here"
+msgstr "Buraya taşı"
+
+msgid "Compress (ZIP)"
+msgstr "Sıkıştır (ZIP)"
+
+msgid "Extract here"
+msgstr "Buraya çıkar"
+
+msgid "Open"
+msgstr "Aç"
+
+msgid "Details"
+msgstr "Ayrıntılar"
+
+msgid "Copy URL"
+msgstr "URL'yi kopyala"
+
+msgid "Cut"
+msgstr "Kes"
+
+msgid "Paste here"
+msgstr "Buraya yapıştır"
+
+msgid "files cut. Open a folder and press Ctrl+V to move them."
+msgstr "dosya kesildi. Taşımak için bir klasör açıp Ctrl+V tuşlarına basın."
+
+msgid "Upload Files"
+msgstr "Dosya Yükle"
+
+msgid "Drop files to upload"
+msgstr "Yüklemek için dosyaları bırakın"
+
+msgid "Files will be uploaded to:"
+msgstr "Dosyaların yükleneceği yer:"
+
+msgid "Uploading"
+msgstr "Yükleniyor"
+
+msgid "Uploading %1$d of %2$d"
+msgstr "%2$d dosyadan %1$d. yükleniyor"
+
+msgid "Upload finished."
+msgstr "Yükleme tamamlandı."
+
+msgid "Some files could not be uploaded."
+msgstr "Bazı dosyalar yüklenemedi."
+
+msgid "Waiting"
+msgstr "Bekliyor"
+
+msgid "Done"
+msgstr "Tamamlandı"
+
+msgid "Cancelled"
+msgstr "İptal edildi"
+
+msgid "Minimize"
+msgstr "Küçült"
+
+msgid "Search media..."
+msgstr "Ortam ara..."
+
+msgid "Select all"
+msgstr "Tümünü seç"
+
+msgid "Select folders"
+msgstr "Klasörleri seç"
+
+msgid "Select all folders"
+msgstr "Tüm klasörleri seç"
+
+msgid "Select folder"
+msgstr "Klasörü seç"
+
+msgid "Deselect"
+msgstr "Seçimi kaldır"
+
+msgid "folders selected"
+msgstr "klasör seçildi"
+
+msgid "folders"
+msgstr "klasör"
+
+msgid "sub folders"
+msgstr "alt klasör"
+
+msgid "Delete folders?"
+msgstr "Klasörler silinsin mi?"
+
+msgid "%1$d folders, %2$d files"
+msgstr "%1$d klasör, %2$d dosya"
+
+msgid "I understand that everything inside will be deleted"
+msgstr "İçindeki her şeyin silineceğini anlıyorum"
+
+msgid "Sub folders and all their files are removed permanently. This cannot be undone."
+msgstr "Alt klasörler ve içlerindeki tüm dosyalar kalıcı olarak silinir. Bu işlem geri alınamaz."
+
+msgid "Delete everything"
+msgstr "Hepsini sil"
+
+msgid "The folder structure is kept inside the archive."
+msgstr "Klasör yapısı arşivin içinde korunur."
+
+msgid "Name"
+msgstr "Ad"
+
+msgid "Clear selection"
+msgstr "Seçimi temizle"
+
+msgid "selected"
+msgstr "seçildi"
+
+msgid "files"
+msgstr "dosya"
+
+msgid "This folder is empty."
+msgstr "Bu klasör boş."
+
+msgid "Drag files here or use the upload button."
+msgstr "Dosyaları buraya sürükleyin veya yükle düğmesini kullanın."
+
+msgid "Loading..."
+msgstr "Yükleniyor..."
+
+msgid "Load more"
+msgstr "Daha fazla yükle"
+
+msgid "Previous"
+msgstr "Önceki"
+
+msgid "Next"
+msgstr "Sonraki"
+
+msgid "Page %1$d of %2$d"
+msgstr "Sayfa %1$d / %2$d"
+
+msgid "Showing %1$d of %2$d"
+msgstr "%2$d dosyadan %1$d gösteriliyor"
+
+msgid "Are you sure?"
+msgstr "Emin misiniz?"
+
+msgid "Selected files will be permanently deleted. This cannot be undone."
+msgstr "Seçilen dosyalar kalıcı olarak silinecek. Bu işlem geri alınamaz."
+
+msgid "Delete folder?"
+msgstr "Klasör silinsin mi?"
+
+msgid "The folder, all of its sub folders and every file inside them will be deleted permanently."
+msgstr "Klasör, tüm alt klasörleri ve içlerindeki tüm dosyalar kalıcı olarak silinecek."
+
+msgid "Archive name"
+msgstr "Arşiv adı"
+
+msgid "A new ZIP file is created in the current folder."
+msgstr "Geçerli klasörde yeni bir ZIP dosyası oluşturulur."
+
+msgid "New name"
+msgstr "Yeni ad"
+
+msgid "Also rename the file on the server"
+msgstr "Sunucudaki dosyayı da yeniden adlandır"
+
+msgid "All image sizes are renamed and every reference in the database (posts, Elementor, WooCommerce, options) is updated."
+msgstr "Tüm görsel boyutları yeniden adlandırılır ve veritabanındaki tüm referanslar (yazılar, Elementor, WooCommerce, ayarlar) güncellenir."
+
+msgid "Choose destination folder"
+msgstr "Hedef klasörü seçin"
+
+msgid "Type"
+msgstr "Tür"
+
+msgid "Dimensions"
+msgstr "Boyutlar"
+
+msgid "Date"
+msgstr "Tarih"
+
+msgid "Alternative text"
+msgstr "Alternatif metin"
+
+msgid "File URL"
+msgstr "Dosya URL"
+
+msgid "Caption"
+msgstr "Görsel altyazısı"
+
+msgid "Description"
+msgstr "Açıklama"
+
+msgid "Uploaded on"
+msgstr "Yüklenme tarihi"
+
+msgid "Uploaded by"
+msgstr "Yükleyen"
+
+msgid "Attached to"
+msgstr "Yüklendiği yer"
+
+msgid "Describe the image for screen readers and search engines. Leave empty if purely decorative."
+msgstr "Görseli ekran okuyucular ve arama motorları için açıklayın. Görsel yalnızca dekoratif amaçlıysa boş bırakın."
+
+msgid "View attachment page"
+msgstr "Ortam sayfasını görüntüle"
+
+msgid "Edit code"
+msgstr "Kodu düzenle"
+
+msgid "New File"
+msgstr "Yeni Dosya"
+
+msgid "Add from cloud"
+msgstr "Buluttan ekle"
+
+msgid "Import from URL"
+msgstr "URL'den içe aktar"
+
+msgid "One link per line (max 20). The files are downloaded by your server."
+msgstr "Her satıra bir bağlantı (en fazla 20). Dosyalar sunucunuz tarafından indirilir."
+
+msgid "File links"
+msgstr "Dosya bağlantıları"
+
+msgid "Importing files..."
+msgstr "Dosyalar içe aktarılıyor..."
+
+msgid "Import"
+msgstr "İçe aktar"
+
+msgid "Some files could not be imported"
+msgstr "Bazı dosyalar içe aktarılamadı"
+
+msgid "Set up cloud services"
+msgstr "Bulut servislerini ayarla"
+
+msgid "No cloud service is enabled yet."
+msgstr "Henüz etkin bir bulut servisi yok."
+
+msgid "The cloud service could not be loaded. Check the keys in FoldPress > Settings > Cloud and that this site is allowed in the service console."
+msgstr "Bulut servisi yüklenemedi. FoldPress > Ayarlar > Bulut bölümündeki anahtarları ve bu sitenin servis konsolunda izinli olduğunu kontrol edin."
+
+msgid "Browse files"
+msgstr "Dosyalara göz at"
+
+msgid "Up one level"
+msgstr "Bir üst klasör"
+
+msgid "Root"
+msgstr "Kök"
+
+msgid "Import %d files"
+msgstr "%d dosyayı içe aktar"
+
+msgid "Type a name with its extension, or pick an extension below."
+msgstr "Uzantısıyla birlikte bir ad yazın veya aşağıdan bir uzantı seçin."
+
+msgid "This extension is allowed."
+msgstr "Bu uzantıya izin veriliyor."
+
+msgid "Add an extension, for example .txt"
+msgstr "Bir uzantı ekleyin, örneğin .txt"
+
+msgid ".%s is not an allowed file type on this site."
+msgstr ".%s bu sitede izin verilen bir dosya türü değil."
+
+msgid ".%s is allowed but cannot be created empty. Upload a file instead."
+msgstr ".%s izinli ancak boş oluşturulamaz. Bunun yerine bir dosya yükleyin."
+
+msgid "Open in the code editor after creating"
+msgstr "Oluşturduktan sonra kod düzenleyicide aç"
+
+msgid "Created in:"
+msgstr "Oluşturulacağı yer:"
+
+msgid "Newest first"
+msgstr "En yeni"
+
+msgid "Oldest first"
+msgstr "En eski"
+
+msgid "Name A-Z"
+msgstr "Ad A-Z"
+
+msgid "Name Z-A"
+msgstr "Ad Z-A"
+
+msgid "Grid view"
+msgstr "Izgara görünümü"
+
+msgid "List view"
+msgstr "Liste görünümü"
+
+msgid "Group by type"
+msgstr "Türe göre grupla"
+
+msgid "Classic library"
+msgstr "Klasik kütüphane"
+
+msgid "Menu"
+msgstr "Menü"
+
+msgid "File exceeds the maximum upload size."
+msgstr "Dosya azami yükleme boyutunu aşıyor."
+
+msgid "Shortcuts & help"
+msgstr "Kısayollar ve yardım"
+
+msgid "Keyboard shortcuts"
+msgstr "Klavye kısayolları"
+
+msgid "Mouse & touch"
+msgstr "Fare ve dokunmatik"
+
+msgid "Select all files on the page"
+msgstr "Sayfadaki tüm dosyaları seç"
+
+msgid "Click"
+msgstr "Tıklama"
+
+msgid "Add or remove a file from the selection"
+msgstr "Seçime dosya ekle veya seçimden çıkar"
+
+msgid "Select a range of files"
+msgstr "Bir dosya aralığını seç"
+
+msgid "Cut selected files"
+msgstr "Seçili dosyaları kes"
+
+msgid "Paste (move) cut files into the open folder"
+msgstr "Kesilen dosyaları açık klasöre yapıştır (taşı)"
+
+msgid "Move selected files to a folder"
+msgstr "Seçili dosyaları bir klasöre taşı"
+
+msgid "Rename the selected file"
+msgstr "Seçili dosyayı yeniden adlandır"
+
+msgid "Delete selected files"
+msgstr "Seçili dosyaları sil"
+
+msgid "Preview the selected file"
+msgstr "Seçili dosyayı önizle"
+
+msgid "Open file details"
+msgstr "Dosya ayrıntılarını aç"
+
+msgid "Space"
+msgstr "Boşluk"
+
+msgid "Toggle selection of the focused file"
+msgstr "Odaklanan dosyanın seçimini değiştir"
+
+msgid "Move focus between files"
+msgstr "Dosyalar arasında gezin"
+
+msgid "Create a new folder"
+msgstr "Yeni klasör oluştur"
+
+msgid "Upload files"
+msgstr "Dosya yükle"
+
+msgid "Focus the search box"
+msgstr "Arama kutusuna odaklan"
+
+msgid "Clear selection / close panels"
+msgstr "Seçimi temizle / panelleri kapat"
+
+msgid "Show this help"
+msgstr "Bu yardımı göster"
+
+msgid "Selection"
+msgstr "Seçim"
+
+msgid "File actions"
+msgstr "Dosya işlemleri"
+
+msgid "Navigation"
+msgstr "Gezinme"
+
+msgid "Select a file"
+msgstr "Dosya seç"
+
+msgid "Double-click"
+msgstr "Çift tıklama"
+
+msgid "Right-click"
+msgstr "Sağ tıklama"
+
+msgid "Open the actions menu (preview, rename, move, zip, unzip, download, delete)"
+msgstr "İşlem menüsünü aç (önizle, yeniden adlandır, taşı, ZIP yap, ZIP aç, indir, sil)"
+
+msgid "Drag to folder"
+msgstr "Klasöre sürükle"
+
+msgid "Move files or folders into another folder"
+msgstr "Dosyaları veya klasörleri başka bir klasöre taşı"
+
+msgid "Drop from computer"
+msgstr "Bilgisayardan bırak"
+
+msgid "Upload files into the open folder (or onto a folder in the sidebar)"
+msgstr "Dosyaları açık klasöre (veya kenar çubuğundaki bir klasörün üzerine) yükle"
+
+msgid "Long press"
+msgstr "Uzun basma"
+
+msgid "Open the actions menu on touch devices"
+msgstr "Dokunmatik cihazlarda işlem menüsünü aç"
+
+msgid "%s/s"
+msgstr "%s/sn"
+
+msgid "%s left"
+msgstr "%s kaldı"
+
+msgid "Took %s"
+msgstr "Süre: %s"
+
+msgid "Measuring..."
+msgstr "Ölçülüyor..."
+
+msgid "Import finished."
+msgstr "İçe aktarma tamamlandı."
+
+msgid "Importing %1$d of %2$d"
+msgstr "%2$d dosyadan %1$d. aktarılıyor"
+
+msgid "%d failed"
+msgstr "%d hata"
+
+msgid "%d cancelled"
+msgstr "%d iptal"
+
+msgid "Server downloading..."
+msgstr "Sunucu indiriyor..."
+
+msgid "Adding to the library..."
+msgstr "Kütüphaneye ekleniyor..."
+
+msgid "%1$s / %2$s downloaded"
+msgstr "%1$s / %2$s indirildi"
+
+msgid "%s downloaded"
+msgstr "%s indirildi"
+
+msgid "Cancel all"
+msgstr "Tümünü iptal et"
+
+msgid "Cancel the queue?"
+msgstr "Kuyruk iptal edilsin mi?"
+
+msgid "%d files that are not finished will be cancelled. A file the server is already downloading may still be added."
+msgstr "Tamamlanmamış %d dosya iptal edilecek. Sunucunun indirmeye başladığı bir dosya yine de eklenebilir."
+
+msgid "%1$d of %2$d files"
+msgstr "%2$d dosyadan %1$d tamamlandı"
+
+msgid "Show files"
+msgstr "Dosyaları göster"
+
+msgid "Hide files"
+msgstr "Dosyaları gizle"
+
+msgid "Preparing upload..."
+msgstr "Yükleme hazırlanıyor..."
+
+msgid "Converted to"
+msgstr "Dönüştürüldü:"
+
+msgid "All types"
+msgstr "Tüm türler"
+
+msgid "Images"
+msgstr "Görseller"
+
+msgid "Videos"
+msgstr "Videolar"
+
+msgid "Audio"
+msgstr "Ses"
+
+msgid "PDF"
+msgstr "PDF"
+
+msgid "Documents"
+msgstr "Belgeler"
+
+msgid "Spreadsheets"
+msgstr "Tablolar"
+
+msgid "Presentations"
+msgstr "Sunumlar"
+
+msgid "Archives"
+msgstr "Arşivler"
+
+msgid "Code"
+msgstr "Kod"
+
+msgid "Fonts"
+msgstr "Yazı tipleri"
+
+msgid "Other"
+msgstr "Diğer"
+
+msgid "You are not allowed to manage media."
+msgstr "Ortam dosyalarını yönetme yetkiniz yok."
+
+msgid "Folder not found."
+msgstr "Klasör bulunamadı."
+
+msgid "Folder name is required."
+msgstr "Klasör adı gerekli."
+
+msgid "A folder with this name already exists here."
+msgstr "Burada bu adda bir klasör zaten var."
+
+msgid "Folder created."
+msgstr "Klasör oluşturuldu."
+
+msgid "Invalid request."
+msgstr "Geçersiz istek."
+
+msgid "Folder renamed."
+msgstr "Klasör yeniden adlandırıldı."
+
+msgid "%1$d folders and %2$d files deleted."
+msgstr "%1$d klasör ve %2$d dosya silindi."
+
+msgid "%d files could not be deleted (no permission) and were moved out."
+msgstr "%d dosya silinemedi (yetki yok) ve klasör dışına taşındı."
+
+msgid "A folder cannot be moved into itself."
+msgstr "Bir klasör kendi içine taşınamaz."
+
+msgid "Archive created."
+msgstr "Arşiv oluşturuldu."
+
+msgid "File renamed. All references in the database were updated."
+msgstr "Dosya yeniden adlandırıldı. Veritabanındaki tüm referanslar güncellendi."
+
+msgid "File renamed."
+msgstr "Dosya yeniden adlandırıldı."
+
+msgid "Changes saved."
+msgstr "Değişiklikler kaydedildi."
+
+msgid "No file received."
+msgstr "Dosya alınmadı."
+
+msgid "Enter a file name with an extension, for example notes.txt."
+msgstr "Uzantısıyla birlikte bir dosya adı girin, örneğin notlar.txt."
+
+msgid "The .%s extension is not allowed on this site. Enable it in FoldPress > Settings > File Types first."
+msgstr ".%s uzantısına bu sitede izin verilmiyor. Önce FoldPress > Ayarlar > Dosya Türleri bölümünden açın."
+
+msgid ".%s files cannot be created empty. Upload an existing file of this type instead."
+msgstr ".%s dosyaları boş oluşturulamaz. Bunun yerine bu türde mevcut bir dosya yükleyin."
+
+msgid "File created."
+msgstr "Dosya oluşturuldu."
+
+msgid "Previous version restored. All references were updated."
+msgstr "Önceki sürüm geri yüklendi. Tüm bağlantılar güncellendi."
+
+msgid "%d files extracted."
+msgstr "%d dosya çıkarıldı."
+
+msgid "%d files skipped (unsupported type)."
+msgstr "%d dosya atlandı (desteklenmeyen tür)."
+
+msgid "No file was found at this address (HTTP %d)."
+msgstr "Bu adreste dosya bulunamadı (HTTP %d)."
+
+msgid "The server refused access (HTTP %d). The link may be private or expired."
+msgstr "Sunucu erişimi reddetti (HTTP %d). Bağlantı gizli veya süresi dolmuş olabilir."
+
+msgid "The server is limiting requests (HTTP %d). Try again in a few minutes."
+msgstr "Sunucu istekleri sınırlıyor (HTTP %d). Birkaç dakika sonra tekrar deneyin."
+
+msgid "The remote server answered with HTTP %d."
+msgstr "Uzak sunucu HTTP %d ile yanıt verdi."
+
+msgid "Cancelled."
+msgstr "İptal edildi."
+
+msgid "This address opens a web page, not a file. Use the direct download link of the file."
+msgstr "Bu adres bir dosya değil, web sayfası açıyor. Dosyanın doğrudan indirme bağlantısını kullanın."
+
+msgid "This cloud service is not enabled."
+msgstr "Bu bulut servisi etkin değil."
+
+msgid "This Google file type cannot be downloaded."
+msgstr "Bu Google dosya türü indirilemez."
+
+msgid "File"
+msgstr "Dosya"
+
+msgid "The WebDAV server refused the user name or password."
+msgstr "WebDAV sunucusu kullanıcı adını veya parolayı reddetti."
+
+msgid "The WebDAV server answered with HTTP %d. Check the address."
+msgstr "WebDAV sunucusu HTTP %d ile yanıt verdi. Adresi kontrol edin."
+
+msgid "Invalid WebDAV response."
+msgstr "Geçersiz WebDAV yanıtı."
+
+msgid "You are not allowed to change these settings."
+msgstr "Bu ayarları değiştirme yetkiniz yok."
+
+msgid "Save a WebDAV address first."
+msgstr "Önce bir WebDAV adresi kaydedin."
+
+msgid "Connected. %d items found in the root folder."
+msgstr "Bağlandı. Kök klasörde %d öğe bulundu."
+
+msgid "Code Editor"
+msgstr "Kod Düzenleyici"
+
+msgid "Theme not found."
+msgstr "Tema bulunamadı."
+
+msgid "Plugin not found."
+msgstr "Eklenti bulunamadı."
+
+msgid "This file type cannot be edited as code."
+msgstr "Bu dosya türü kod olarak düzenlenemez."
+
+msgid "You are not allowed to edit these files."
+msgstr "Bu dosyaları düzenleme yetkiniz yok."
+
+msgid "File not found or not editable."
+msgstr "Dosya bulunamadı veya düzenlenemez."
+
+msgid "This file is too large to edit in the browser (max 3 MB)."
+msgstr "Bu dosya tarayıcıda düzenlemek için çok büyük (en fazla 3 MB)."
+
+msgid "Binary files cannot be edited."
+msgstr "İkili (binary) dosyalar düzenlenemez."
+
+msgid "This file was changed on the server after you opened it (by another user, an update or FTP)."
+msgstr "Bu dosya siz açtıktan sonra sunucuda değiştirildi (başka bir kullanıcı, güncelleme veya FTP)."
+
+msgid "The file is not writable. Make it writable on the server (file permissions 644 or 664) before saving."
+msgstr "Dosya yazılabilir değil. Kaydetmeden önce sunucuda yazılabilir yapın (dosya izinleri 644 veya 664)."
+
+msgid "Could not write the file."
+msgstr "Dosya yazılamadı."
+
+msgid "Saved after a full PHP syntax check. Your server does not allow WordPress to call itself (loopback), so the extra runtime check was skipped. If the site shows an error, undo the change via FTP or the file manager of your hosting panel."
+msgstr "Tam PHP sözdizimi denetiminden sonra kaydedildi. Sunucunuz WordPress'in kendisini çağırmasına (loopback) izin vermediği için ek çalışma zamanı denetimi atlandı. Site hata gösterirse değişikliği FTP veya hosting panelinizin dosya yöneticisiyle geri alın."
+
+msgid "WordPress could not reach your site to test the change, and the file could not be written directly. Nothing was changed. Check the file permissions or save the file via FTP."
+msgstr "WordPress değişikliği test etmek için sitenize ulaşamadı ve dosya doğrudan da yazılamadı. Hiçbir şey değiştirilmedi. Dosya izinlerini kontrol edin veya dosyayı FTP ile kaydedin."
+
+msgid "WordPress tested the change and it causes a fatal error, so the file was restored: %1$s (%2$s, line %3$d)."
+msgstr "WordPress değişikliği test etti ve ölümcül hataya yol açtığı için dosya eski haline getirildi: %1$s (%2$s, satır %3$d)."
+
+msgid "File saved successfully."
+msgstr "Dosya başarıyla kaydedildi."
+
+msgid "PHP syntax error: %1$s on line %2$d. Nothing was saved."
+msgstr "PHP sözdizimi hatası: %2$d. satırda %1$s. Hiçbir şey kaydedilmedi."
+
+msgid "Theme"
+msgstr "Tema"
+
+msgid "Plugin"
+msgstr "Eklenti"
+
+msgid "Media file"
+msgstr "Ortam dosyası"
+
+msgid "active"
+msgstr "etkin"
+
+msgid "Files"
+msgstr "Dosyalar"
+
+msgid "Filter files..."
+msgstr "Dosya filtrele..."
+
+msgid "No editable files found."
+msgstr "Düzenlenebilir dosya bulunamadı."
+
+msgid "Select a file from the tree to start editing."
+msgstr "Düzenlemeye başlamak için ağaçtan bir dosya seçin."
+
+msgid "Saving..."
+msgstr "Kaydediliyor..."
+
+msgid "File saved"
+msgstr "Dosya kaydedildi"
+
+msgid "Your changes were written to the file."
+msgstr "Değişiklikleriniz dosyaya yazıldı."
+
+msgid "The file could not be saved"
+msgstr "Dosya kaydedilemedi"
+
+msgid "Your PHP code changes were rolled back due to an error"
+msgstr "PHP kodu değişiklikleriniz bir hata nedeniyle geri alındı"
+
+msgid "WordPress tested the change and found a fatal error, so the previous version was kept. Fix the problem and save again."
+msgstr "WordPress değişikliği test etti ve ölümcül bir hata buldu, bu yüzden önceki sürüm korundu. Sorunu düzeltip tekrar kaydedin."
+
+msgid "Go to line"
+msgstr "Satıra git"
+
+msgid "Line number"
+msgstr "Satır numarası"
+
+msgid "File changed on the server"
+msgstr "Dosya sunucuda değişti"
+
+msgid "Overwrite with my version"
+msgstr "Benim sürümümle üzerine yaz"
+
+msgid "Load server version"
+msgstr "Sunucudaki sürümü yükle"
+
+msgid "File is not writable"
+msgstr "Dosya yazılabilir değil"
+
+msgid "Read only: this file is not writable on the server. You can view it, but changes cannot be saved until its permissions are changed."
+msgstr "Salt okunur: bu dosya sunucuda yazılabilir değil. Görüntüleyebilirsiniz ancak izinleri değiştirilene kadar değişiklikler kaydedilemez."
+
+msgid "Learn about file permissions"
+msgstr "Dosya izinleri hakkında bilgi alın"
+
+msgid "Unsaved changes"
+msgstr "Kaydedilmemiş değişiklikler"
+
+msgid "This file has unsaved changes. Close it anyway?"
+msgstr "Bu dosyada kaydedilmemiş değişiklikler var. Yine de kapatılsın mı?"
+
+msgid "Some open files have unsaved changes. Switch anyway? The changes will be lost."
+msgstr "Açık dosyalarda kaydedilmemiş değişiklikler var. Yine de geçilsin mi? Değişiklikler kaybolacak."
+
+msgid "Close without saving"
+msgstr "Kaydetmeden kapat"
+
+msgid "Switch and discard"
+msgstr "Geç ve değişiklikleri at"
+
+msgid "You have unsaved changes."
+msgstr "Kaydedilmemiş değişiklikleriniz var."
+
+msgid "Documentation"
+msgstr "Belgeler"
+
+msgid "Function name..."
+msgstr "İşlev adı..."
+
+msgid "Look up"
+msgstr "Tanıma bak"
+
+msgid "Choose a function or place the cursor on a function name."
+msgstr "Bir işlev seçin veya imleci bir işlev adının üzerine getirin."
+
+msgid "Find"
+msgstr "Bul"
+
+msgid "Replace"
+msgstr "Değiştir"
+
+msgid "Replace all"
+msgstr "Tümünü değiştir"
+
+msgid "Match case"
+msgstr "Büyük/küçük harf duyarlı"
+
+msgid "No results"
+msgstr "Sonuç yok"
+
+msgid "%d replacements made."
+msgstr "%d değişiklik yapıldı."
+
+msgid "Word wrap"
+msgstr "Satır kaydırma"
+
+msgid "Dark theme"
+msgstr "Koyu tema"
+
+msgid "Smaller text"
+msgstr "Yazıyı küçült"
+
+msgid "Larger text"
+msgstr "Yazıyı büyüt"
+
+msgid "Ln"
+msgstr "Sat"
+
+msgid "Col"
+msgstr "Süt"
+
+msgid "lines"
+msgstr "satır"
+
+msgid "Tabs"
+msgstr "Sekme"
+
+msgid "Writable"
+msgstr "Yazılabilir"
+
+msgid "Read only"
+msgstr "Salt okunur"
+
+msgid "Modified"
+msgstr "Değiştirilme"
+
+msgid "Classic editor"
+msgstr "Klasik düzenleyici"
+
+msgid "Back to library"
+msgstr "Kütüphaneye dön"
+
+msgid "File editing is disabled on this site (DISALLOW_FILE_EDIT)."
+msgstr "Bu sitede dosya düzenleme kapalı (DISALLOW_FILE_EDIT)."
+
+msgid "Ctrl+S save · Ctrl+F find · Ctrl+H replace · Ctrl+G go to line · Ctrl+/ comment"
+msgstr "Ctrl+S kaydet · Ctrl+F bul · Ctrl+H değiştir · Ctrl+G satıra git · Ctrl+/ yorum satırı"
+
+msgid "Active theme"
+msgstr "Etkin tema"
+
+msgid "Active plugin"
+msgstr "Etkin eklenti"
+
+msgid "Full screen"
+msgstr "Tam ekran"
+
+msgid "File not found on disk."
+msgstr "Dosya diskte bulunamadı."
+
+msgid "Backup could not be written. Check that the uploads folder is writable."
+msgstr "Yedek yazılamadı. Uploads klasörünün yazılabilir olduğunu kontrol edin."
+
+msgid "No backup found for this file."
+msgstr "Bu dosya için yedek bulunamadı."
+
+msgid "Backup file is missing."
+msgstr "Yedek dosyası eksik."
+
+msgid "Could not restore the original file."
+msgstr "Orijinal dosya geri yüklenemedi."
+
+msgid "Choose WebP or AVIF and save the settings first."
+msgstr "Önce WebP veya AVIF seçip ayarları kaydedin."
+
+msgid "Originals restored and the backup folder was removed."
+msgstr "Orijinaller geri yüklendi ve yedek klasörü silindi."
+
+msgid "Some backups are still in use, the backup folder was kept."
+msgstr "Bazı yedekler hâlâ kullanımda, yedek klasörü korundu."
+
+msgid "Edit Media"
+msgstr "Ortamı Düzenle"
+
+msgid "Save Changes"
+msgstr "Değişiklikleri Kaydet"
+
+msgid "General"
+msgstr "Genel"
+
+msgid "Changing the file name renames every image size on the server and updates all references in the database: posts, pages, Elementor, WooCommerce, widgets, options and other plugins."
+msgstr "Dosya adını değiştirmek sunucudaki tüm görsel boyutlarını yeniden adlandırır ve veritabanındaki tüm referansları günceller: yazılar, sayfalar, Elementor, WooCommerce, bileşenler, ayarlar ve diğer eklentiler."
+
+msgid "Describe the image for screen readers and search engines."
+msgstr "Görseli ekran okuyucular ve arama motorları için açıklayın."
+
+msgid "Folder"
+msgstr "Klasör"
+
+msgid "File information"
+msgstr "Dosya bilgileri"
+
+msgid "Generated sizes"
+msgstr "Oluşturulan boyutlar"
+
+msgid "Where it is used"
+msgstr "Kullanıldığı yerler"
+
+msgid "Not used anywhere: no post, page, product, user, term or setting references this file."
+msgstr "Hiçbir yerde kullanılmıyor: bu dosyaya bağlı yazı, sayfa, ürün, kullanıcı, kategori veya ayar yok."
+
+msgid "Scanned by media ID and file URL in content, custom fields, users, categories and site settings."
+msgstr "Ortam ID'si ve dosya adresiyle içerikler, özel alanlar, kullanıcılar, kategoriler ve site ayarları tarandı."
+
+msgid "Posts, pages and products"
+msgstr "Yazılar, sayfalar ve ürünler"
+
+msgid "Users"
+msgstr "Kullanıcılar"
+
+msgid "Categories and terms"
+msgstr "Kategoriler ve terimler"
+
+msgid "Site settings"
+msgstr "Site ayarları"
+
+msgid "Edit"
+msgstr "Düzenle"
+
+msgid "All"
+msgstr "Tümü"
+
+msgid "places"
+msgstr "yer"
+
+msgid "Safe to change"
+msgstr "Değiştirmek güvenli"
+
+msgid "View"
+msgstr "Görüntüle"
+
+msgid "Discard unsaved changes?"
+msgstr "Kaydedilmemiş değişiklikler iptal edilsin mi?"
+
+msgid "These changes have not been saved and will be lost:"
+msgstr "Şu değişiklikler kaydedilmedi ve kaybolacak:"
+
+msgid "Discard changes"
+msgstr "Değişiklikleri iptal et"
+
+msgid "Changes discarded."
+msgstr "Değişiklikler iptal edildi."
+
+msgid "Crop & rotate"
+msgstr "Kırp ve döndür"
+
+msgid "Danger zone"
+msgstr "Tehlikeli bölge"
+
+msgid "Deletes the file and all of its sizes permanently."
+msgstr "Dosyayı ve tüm boyutlarını kalıcı olarak siler."
+
+msgid "Rename the file on the server?"
+msgstr "Dosya sunucuda yeniden adlandırılsın mı?"
+
+msgid "All image sizes will be renamed and every reference in the database will be updated automatically. Take a backup first on large sites."
+msgstr "Tüm görsel boyutları yeniden adlandırılacak ve veritabanındaki tüm referanslar otomatik olarak güncellenecek. Büyük sitelerde önce yedek alın."
+
+msgid "Rename and update"
+msgstr "Yeniden adlandır ve güncelle"
+
+msgid "You have unsaved changes. Leave anyway?"
+msgstr "Kaydedilmemiş değişiklikleriniz var. Yine de ayrılmak istiyor musunuz?"
+
+msgid "Media item not found."
+msgstr "Ortam öğesi bulunamadı."
+
+msgid "Featured image"
+msgstr "Öne çıkan görsel"
+
+msgid "Product gallery"
+msgstr "Ürün galerisi"
+
+msgid "In content"
+msgstr "İçerikte"
+
+msgid "Page builder"
+msgstr "Sayfa oluşturucu"
+
+msgid "Changes saved. File renamed and %d database references updated."
+msgstr "Değişiklikler kaydedildi. Dosya yeniden adlandırıldı ve %d veritabanı referansı güncellendi."
+
+msgid "This version no longer exists."
+msgstr "Bu sürüm artık mevcut değil."
+
+msgid "ZipArchive PHP extension is not available on this server."
+msgstr "Bu sunucuda ZipArchive PHP eklentisi mevcut değil."
+
+msgid "Could not create archive."
+msgstr "Arşiv oluşturulamadı."
+
+msgid "No files could be added to the archive."
+msgstr "Arşive hiçbir dosya eklenemedi."
+
+msgid "Selected file is not a ZIP archive."
+msgstr "Seçilen dosya bir ZIP arşivi değil."
+
+msgid "Could not open archive."
+msgstr "Arşiv açılamadı."
+
+msgid "Archive contains more than %d entries."
+msgstr "Arşiv %d öğeden fazla içeriyor."
+
+msgid "Archive is too large to extract."
+msgstr "Arşiv çıkarılamayacak kadar büyük."
+
+msgid "Untitled"
+msgstr "Adsız"
+
+msgid "Direct file system access is required to rename files."
+msgstr "Dosyaları yeniden adlandırmak için doğrudan dosya sistemi erişimi gerekli."
+
+msgid "Invalid file name."
+msgstr "Geçersiz dosya adı."
+
+msgid "A file with this name already exists."
+msgstr "Bu adda bir dosya zaten var."
+
+msgid "Could not rename the file on disk."
+msgstr "Dosya diskte yeniden adlandırılamadı."
+
+msgid "Filter by folder"
+msgstr "Klasöre göre filtrele"
+
+msgid "Manage folders"
+msgstr "Klasörleri yönet"
+
+msgid "Search folders..."
+msgstr "Klasör ara..."
+
+msgid "No folders found."
+msgstr "Klasör bulunamadı."
+
+msgid "New uploads go to"
+msgstr "Yeni yüklemeler"
+
+msgid "Show / hide sub folders"
+msgstr "Alt klasörleri göster / gizle"
+
+msgid "Moved to folder."
+msgstr "Klasöre taşındı."
+
+msgid "Paste a link to embed it (YouTube, Vimeo, X, Spotify, SoundCloud...) or to insert an image or file by its address."
+msgstr "Gömmek için bir bağlantı yapıştırın (YouTube, Vimeo, X, Spotify, SoundCloud...) veya bir görseli ya da dosyayı adresiyle ekleyin."
+
+msgid "Download to media library"
+msgstr "Ortam kütüphanesine indir"
+
+msgid "Copies the file to your site so it does not depend on the other server."
+msgstr "Dosyayı sitenize kopyalar; diğer sunucuya bağlı kalmaz."
+
+msgid "Downloading to the media library..."
+msgstr "Ortam kütüphanesine indiriliyor..."
+
+msgid "File added to the media library."
+msgstr "Dosya ortam kütüphanesine eklendi."
+
+msgid "Show in library"
+msgstr "Kütüphanede göster"
+
+msgid "Enter a valid http(s) address first."
+msgstr "Önce geçerli bir http(s) adresi girin."
+
+msgid "This document could not be read for preview."
+msgstr "Bu belge önizleme için okunamadı."
+
+msgid "Sheet %d"
+msgstr "Sayfa %d"
+
+msgid "FoldPress Settings"
+msgstr "FoldPress Ayarları"
+
+msgid "File Manager"
+msgstr "Dosya Yöneticisi"
+
+msgid "Settings saved."
+msgstr "Ayarlar kaydedildi."
+
+msgid "Reset all settings?"
+msgstr "Tüm ayarlar sıfırlansın mı?"
+
+msgid "All FoldPress settings return to their defaults. Folders and files are not affected."
+msgstr "Tüm FoldPress ayarları varsayılana döner. Klasörler ve dosyalar etkilenmez."
+
+msgid "Reset"
+msgstr "Sıfırla"
+
+msgid "Add file type"
+msgstr "Dosya türü ekle"
+
+msgid "Extension"
+msgstr "Uzantı"
+
+msgid "MIME type"
+msgstr "MIME türü"
+
+msgid "Example: application/x-figma. The uploaded file content must match this type."
+msgstr "Örnek: application/x-figma. Yüklenen dosyanın içeriği bu türle eşleşmelidir."
+
+msgid "Add"
+msgstr "Ekle"
+
+msgid "Remove"
+msgstr "Kaldır"
+
+msgid "This extension is blocked for security reasons."
+msgstr "Bu uzantı güvenlik nedeniyle engellenmiştir."
+
+msgid "Enter a valid extension and MIME type."
+msgstr "Geçerli bir uzantı ve MIME türü girin."
+
+msgid "This extension is already in the list."
+msgstr "Bu uzantı zaten listede."
+
+msgid "Custom"
+msgstr "Özel"
+
+msgid "Scanning library..."
+msgstr "Kütüphane taranıyor..."
+
+msgid "Scan complete."
+msgstr "Tarama tamamlandı."
+
+msgid "Nothing to convert. All images are already optimized."
+msgstr "Dönüştürülecek görsel yok. Tüm görseller zaten optimize."
+
+msgid "Convert existing images?"
+msgstr "Mevcut görseller dönüştürülsün mü?"
+
+msgid "%1$d images will be converted to %2$s. Originals are backed up first and every link in the database is updated. Keep this page open until it finishes."
+msgstr "%1$d görsel %2$s formatına dönüştürülecek. Önce orijinaller yedeklenir ve veritabanındaki tüm bağlantılar güncellenir. İşlem bitene kadar bu sayfayı açık tutun."
+
+msgid "Convert"
+msgstr "Dönüştür"
+
+msgid "Converting images"
+msgstr "Görseller dönüştürülüyor"
+
+msgid "Conversion finished."
+msgstr "Dönüştürme tamamlandı."
+
+msgid "Saved"
+msgstr "Kazanılan"
+
+msgid "Restore all originals?"
+msgstr "Tüm orijinaller geri yüklensin mi?"
+
+msgid "%d converted images will be replaced by their original files. Converted files are deleted, links are updated back and the backup folder is removed when finished."
+msgstr "%d dönüştürülmüş görsel orijinal dosyalarıyla değiştirilecek. Dönüştürülen dosyalar silinir, bağlantılar eski haline getirilir ve işlem bitince yedek klasörü temizlenir."
+
+msgid "Restore"
+msgstr "Geri yükle"
+
+msgid "Restoring originals"
+msgstr "Orijinaller geri yükleniyor"
+
+msgid "Stopped. You can continue later."
+msgstr "Durduruldu. Daha sonra devam edebilirsiniz."
+
+msgid "Some files could not be processed:"
+msgstr "Bazı dosyalar işlenemedi:"
+
+msgid "Settings were saved. Testing the connection..."
+msgstr "Ayarlar kaydedildi. Bağlantı test ediliyor..."
+
+msgid "%d settings changed"
+msgstr "%d ayar değişti"
+
+msgid "File type added"
+msgstr "Dosya türü eklendi"
+
+msgid "File type removed"
+msgstr "Dosya türü kaldırıldı"
+
+msgid "On"
+msgstr "Açık"
+
+msgid "Off"
+msgstr "Kapalı"
+
+msgid "Empty"
+msgstr "Boş"
+
+msgid "Changed"
+msgstr "Değiştirildi"
+
+msgid "was"
+msgstr "önceki"
+
+msgid "Settings were reset."
+msgstr "Ayarlar sıfırlandı."
+
+msgid "Max %1$d x %2$d px"
+msgstr "En fazla %1$d x %2$d px"
+
+msgid "%d px wide, height proportional"
+msgstr "%d px genişlik, yükseklik orantılı"
+
+msgid "%d px tall, width proportional"
+msgstr "%d px yükseklik, genişlik orantılı"
+
+msgid "Original size"
+msgstr "Orijinal boyut"
+
+msgid "Cropped to exact size"
+msgstr "Tam boyuta kırpılır"
+
+msgid "Scaled, not cropped"
+msgstr "Orantılı küçültülür, kırpılmaz"
+
+msgid "Uploads"
+msgstr "Yüklemeler"
+
+msgid "File Types"
+msgstr "Dosya Türleri"
+
+msgid "Image Sizes"
+msgstr "Görsel Boyutları"
+
+msgid "WebP / AVIF"
+msgstr "WebP / AVIF"
+
+msgid "Cloud"
+msgstr "Bulut"
+
+msgid "System"
+msgstr "Sistem"
+
+msgid "Media settings"
+msgstr "Ortam ayarları"
+
+msgid "Replace the Media Library"
+msgstr "Ortam Kütüphanesinin yerini al"
+
+msgid "Media > Library and Add New open the FoldPress file manager."
+msgstr "Ortamlar > Kütüphane ve Yeni Ekle, FoldPress dosya yöneticisini açar."
+
+msgid "Replace the attachment edit screen"
+msgstr "Ortam düzenleme ekranının yerini al"
+
+msgid "Use the FoldPress editor for media details and advanced editing."
+msgstr "Ortam ayrıntıları ve gelişmiş düzenleme için FoldPress düzenleyicisini kullan."
+
+msgid "Replace the Theme and Plugin File Editors"
+msgstr "Tema ve Eklenti Dosya Düzenleyicilerinin yerini al"
+
+msgid "Use the FoldPress code editor: file tree, tabs, syntax highlighting for PHP, CSS, JS, HTML, Java, C#, C/C++ and more, find & replace, documentation lookup."
+msgstr "FoldPress kod düzenleyicisini kullan: dosya ağacı, sekmeler, PHP, CSS, JS, HTML, Java, C#, C/C++ ve daha fazlası için sözdizimi renklendirme, bul ve değiştir, belge arama."
+
+msgid "Folders in the media modal"
+msgstr "Ortam penceresinde klasörler"
+
+msgid "Adds the folder panel to Add Media, featured image and block editor dialogs."
+msgstr "Ortam ekle, öne çıkan görsel ve blok düzenleyici pencerelerine klasör paneli ekler."
+
+msgid "FoldPress design for the media modal"
+msgstr "Ortam penceresi için FoldPress tasarımı"
+
+msgid "Restyles the WordPress media dialogs (classic, Gutenberg and front-end) to match FoldPress."
+msgstr "WordPress ortam pencerelerini (klasik, Gutenberg ve ön yüz) FoldPress tasarımına uyarlar."
+
+msgid "Lightbox preview"
+msgstr "Lightbox önizleme"
+
+msgid "Preview images, videos, audio, PDF, Word, Excel, PowerPoint, text, Markdown, CSV and ZIP files in a full-screen viewer."
+msgstr "Görselleri, videoları, sesleri, PDF, Word, Excel, PowerPoint, metin, Markdown, CSV ve ZIP dosyalarını tam ekran görüntüleyicide önizle."
+
+msgid "Office full-layout view (Microsoft)"
+msgstr "Office tam düzen görünümü (Microsoft)"
+
+msgid "Adds a \"Full layout\" button for Word, Excel and PowerPoint files using Microsoft Office Online. The file URL is sent to Microsoft and the site must be publicly reachable. The built-in quick preview always works without it."
+msgstr "Word, Excel ve PowerPoint dosyaları için Microsoft Office Online ile \"Tam düzen\" düğmesi ekler. Dosya adresi Microsoft'a gönderilir ve site herkese açık olmalıdır. Yerleşik hızlı önizleme bu ayar olmadan da her zaman çalışır."
+
+msgid "Notification position"
+msgstr "Bildirim konumu"
+
+msgid "Where success and error notifications appear."
+msgstr "Başarı ve hata bildirimlerinin görüneceği yer."
+
+msgid "Top right"
+msgstr "Sağ üst"
+
+msgid "Top center"
+msgstr "Üst orta"
+
+msgid "Top left"
+msgstr "Sol üst"
+
+msgid "Bottom right"
+msgstr "Sağ alt"
+
+msgid "Bottom center"
+msgstr "Alt orta"
+
+msgid "Bottom left"
+msgstr "Sol alt"
+
+msgid "Listing"
+msgstr "Listeleme"
+
+msgid "Pagination"
+msgstr "Sayfalama"
+
+msgid "How further files are loaded in the file manager."
+msgstr "Dosya yöneticisinde sonraki dosyaların nasıl yükleneceği."
+
+msgid "Load more button"
+msgstr "Daha fazla yükle düğmesi"
+
+msgid "Numbered pages"
+msgstr "Numaralı sayfalar"
+
+msgid "Files per page"
+msgstr "Sayfa başına dosya"
+
+msgid "Between 12 and 200."
+msgstr "12 ile 200 arasında."
+
+msgid "Default view"
+msgstr "Varsayılan görünüm"
+
+msgid "Upload folder structure"
+msgstr "Yükleme klasörü yapısı"
+
+msgid "Where new files are stored inside the uploads directory. Existing files are not moved and keep working."
+msgstr "Yeni dosyaların uploads dizini içinde nereye kaydedileceği. Mevcut dosyalar taşınmaz ve çalışmaya devam eder."
+
+msgid "Year / month (WordPress default)"
+msgstr "Yıl / ay (WordPress varsayılanı)"
+
+msgid "Single folder (no sub-folders)"
+msgstr "Tek klasör (alt klasör yok)"
+
+msgid "Custom folder + year / month"
+msgstr "Özel klasör + yıl / ay"
+
+msgid "Mirror FoldPress folders"
+msgstr "FoldPress klasörlerini yansıt"
+
+msgid "Custom folder name"
+msgstr "Özel klasör adı"
+
+msgid "Used with \"Custom folder + year / month\". Letters, numbers, dashes and slashes."
+msgstr "\"Özel klasör + yıl / ay\" ile kullanılır. Harf, rakam, tire ve eğik çizgi."
+
+msgid "Maximum upload size"
+msgstr "Azami yükleme boyutu"
+
+msgid "0 = server limit (%s). A lower value can be set; the server limit cannot be exceeded."
+msgstr "0 = sunucu sınırı (%s). Daha düşük bir değer ayarlanabilir; sunucu sınırı aşılamaz."
+
+msgid "Clean file names"
+msgstr "Dosya adlarını temizle"
+
+msgid "Converts Turkish and accented characters (ş, ğ, ı, ü...) and spaces into URL-safe names."
+msgstr "Türkçe ve aksanlı karakterleri (ş, ğ, ı, ü...) ve boşlukları URL uyumlu adlara dönüştürür."
+
+msgid "Lowercase file names"
+msgstr "Dosya adlarını küçük harfe çevir"
+
+msgid "This list decides what can be uploaded: enabled types are accepted, disabled types are refused everywhere (media library, editors, front-end). Executable and script types are always blocked."
+msgstr "Neyin yüklenebileceğine bu liste karar verir: açık türler kabul edilir, kapalı türler her yerde reddedilir (ortam kütüphanesi, düzenleyiciler, ön yüz). Çalıştırılabilir ve betik türleri her zaman engellidir."
+
+msgid "Search extensions..."
+msgstr "Uzantı ara..."
+
+msgid "Enable all"
+msgstr "Tümünü aç"
+
+msgid "Disable all"
+msgstr "Tümünü kapat"
+
+msgid "Custom file types"
+msgstr "Özel dosya türleri"
+
+msgid "No custom file types yet."
+msgstr "Henüz özel dosya türü yok."
+
+msgid "Thumbnail"
+msgstr "Küçük resim"
+
+msgid "Medium"
+msgstr "Orta"
+
+msgid "Large"
+msgstr "Büyük"
+
+msgid "Maximum width x height in pixels."
+msgstr "Piksel cinsinden azami genişlik x yükseklik."
+
+msgid "Crop thumbnails to exact size"
+msgstr "Küçük resimleri tam boyuta kırp"
+
+msgid "Big image threshold"
+msgstr "Büyük görsel eşiği"
+
+msgid "Larger uploads are scaled down to this size. 0 keeps the original size."
+msgstr "Daha büyük yüklemeler bu boyuta küçültülür. 0 orijinal boyutu korur."
+
+msgid "JPEG / WebP quality"
+msgstr "JPEG / WebP kalitesi"
+
+msgid "Compression quality for generated images (10-100)."
+msgstr "Oluşturulan görseller için sıkıştırma kalitesi (10-100)."
+
+msgid "Additional sizes (themes and plugins)"
+msgstr "Ek boyutlar (temalar ve eklentiler)"
+
+msgid "Turn off sizes you do not need to save disk space. Applies to new uploads."
+msgstr "Disk alanından tasarruf için ihtiyacınız olmayan boyutları kapatın. Yeni yüklemelere uygulanır."
+
+msgid "WebP / AVIF conversion"
+msgstr "WebP / AVIF dönüştürme"
+
+msgid "JPEG and PNG images are converted automatically on upload. Existing media can be converted below. Originals are always backed up and can be restored at any time. Files that already are WebP or AVIF are never touched."
+msgstr "JPEG ve PNG görseller yüklenirken otomatik dönüştürülür. Mevcut ortam dosyaları aşağıdan dönüştürülebilir. Orijinaller her zaman yedeklenir ve istendiğinde geri yüklenebilir. Zaten WebP veya AVIF olan dosyalara dokunulmaz."
+
+msgid "Keep original formats"
+msgstr "Orijinal formatlar korunur"
+
+msgid "Best compatibility, about 30% smaller"
+msgstr "En iyi uyumluluk, yaklaşık %30 daha küçük"
+
+msgid "Not supported by this server"
+msgstr "Bu sunucu desteklemiyor"
+
+msgid "Smallest files, about 50% smaller"
+msgstr "En küçük dosyalar, yaklaşık %50 daha küçük"
+
+msgid "Output format"
+msgstr "Çıktı formatı"
+
+msgid "Low"
+msgstr "Düşük"
+
+msgid "High"
+msgstr "Yüksek"
+
+msgid "Quality"
+msgstr "Kalite"
+
+msgid "Higher quality means larger files. Medium is recommended for most sites."
+msgstr "Yüksek kalite daha büyük dosya demektir. Çoğu site için Orta önerilir."
+
+msgid "Custom quality"
+msgstr "Özel kalite"
+
+msgid "Lower values give smaller files with more visible compression."
+msgstr "Düşük değerler daha küçük dosya ve daha belirgin sıkıştırma sağlar."
+
+msgid "Existing media"
+msgstr "Mevcut ortam dosyaları"
+
+msgid "Can be converted"
+msgstr "Dönüştürülebilir"
+
+msgid "Converted (backed up)"
+msgstr "Dönüştürüldü (yedekli)"
+
+msgid "Already WebP / AVIF"
+msgstr "Zaten WebP / AVIF"
+
+msgid "Scan library"
+msgstr "Kütüphaneyi tara"
+
+msgid "Convert existing images"
+msgstr "Mevcut görselleri dönüştür"
+
+msgid "Stop"
+msgstr "Durdur"
+
+msgid "Restore originals"
+msgstr "Orijinalleri geri yükle"
+
+msgid "Cloud import"
+msgstr "Bulut içe aktarma"
+
+msgid "Let editors pick files from cloud storage and add them to the media library. Files are downloaded by your server and go through the same type, size and conversion rules as normal uploads."
+msgstr "Editörlerin bulut depolamadan dosya seçip ortam kütüphanesine eklemesini sağlayın. Dosyalar sunucunuz tarafından indirilir ve normal yüklemelerle aynı tür, boyut ve dönüştürme kurallarından geçer."
+
+msgid "Copy"
+msgstr "Kopyala"
+
+msgid "Pick files and Google Docs / Sheets / Slides (exported as DOCX, XLSX, PPTX)."
+msgstr "Dosyaları ve Google Dokümanlar / E-Tablolar / Slaytlar'ı seçin (DOCX, XLSX, PPTX olarak aktarılır)."
+
+msgid "Google Cloud Console: create a project and enable \"Google Drive API\" and \"Google Picker API\"."
+msgstr "Google Cloud Console: bir proje oluşturun ve \"Google Drive API\" ile \"Google Picker API\"yi etkinleştirin."
+
+msgid "Create an API key and an OAuth client ID (Web application). Add the origin below to \"Authorized JavaScript origins\"."
+msgstr "Bir API anahtarı ve OAuth istemci kimliği (Web uygulaması) oluşturun. Aşağıdaki kaynağı \"Yetkili JavaScript kaynakları\" listesine ekleyin."
+
+msgid "Paste the values here. The project number is the App ID."
+msgstr "Değerleri buraya yapıştırın. Proje numarası App ID'dir."
+
+msgid "Authorized JavaScript origin"
+msgstr "Yetkili JavaScript kaynağı"
+
+msgid "OAuth client ID"
+msgstr "OAuth istemci kimliği"
+
+msgid "API key"
+msgstr "API anahtarı"
+
+msgid "App ID (project number)"
+msgstr "App ID (proje numarası)"
+
+msgid "Choose files with the official Dropbox Chooser."
+msgstr "Resmi Dropbox Chooser ile dosya seçin."
+
+msgid "Dropbox App Console: create an app (Scoped access)."
+msgstr "Dropbox App Console: bir uygulama oluşturun (Scoped access)."
+
+msgid "Under \"Chooser / Saver / Embedder domains\" add your domain below."
+msgstr "\"Chooser / Saver / Embedder domains\" bölümüne aşağıdaki alan adınızı ekleyin."
+
+msgid "Paste the App key."
+msgstr "App key değerini yapıştırın."
+
+msgid "Domain"
+msgstr "Alan adı"
+
+msgid "App key"
+msgstr "App key"
+
+msgid "Personal OneDrive and OneDrive for Business / SharePoint."
+msgstr "Kişisel OneDrive ve İş için OneDrive / SharePoint."
+
+msgid "Azure portal > App registrations: register an app (any account type)."
+msgstr "Azure portalı > Uygulama kayıtları: bir uygulama kaydedin (herhangi bir hesap türü)."
+
+msgid "Authentication > add platform \"Single-page application\" with the redirect URI below. Enable access and ID tokens."
+msgstr "Kimlik doğrulama > aşağıdaki yönlendirme URI'siyle \"Tek sayfalı uygulama\" platformu ekleyin. Erişim ve kimlik belirteçlerini etkinleştirin."
+
+msgid "Paste the Application (client) ID."
+msgstr "Uygulama (istemci) kimliğini yapıştırın."
+
+msgid "Redirect URI"
+msgstr "Yönlendirme URI'si"
+
+msgid "Application (client) ID"
+msgstr "Uygulama (istemci) kimliği"
+
+msgid "WebDAV / own cloud"
+msgstr "WebDAV / kendi bulutunuz"
+
+msgid "Nextcloud, ownCloud, Synology, QNAP, pCloud, Yandex Disk, Seafile and any WebDAV server, including servers on your own network."
+msgstr "Nextcloud, ownCloud, Synology, QNAP, pCloud, Yandex Disk, Seafile ve kendi ağınızdakiler dahil tüm WebDAV sunucuları."
+
+msgid "Nextcloud / ownCloud address example: https://cloud.example.com/remote.php/dav/files/USERNAME/ . Use an app password instead of your main password."
+msgstr "Nextcloud / ownCloud adres örneği: https://cloud.example.com/remote.php/dav/files/KULLANICI/ . Ana parolanız yerine bir uygulama parolası kullanın."
+
+msgid "Display name"
+msgstr "Görünen ad"
+
+msgid "WebDAV address"
+msgstr "WebDAV adresi"
+
+msgid "User name"
+msgstr "Kullanıcı adı"
+
+msgid "Password / app password"
+msgstr "Parola / uygulama parolası"
+
+msgid "Saved - leave empty to keep"
+msgstr "Kaydedildi - korumak için boş bırakın"
+
+msgid "Test connection"
+msgstr "Bağlantıyı test et"
+
+msgid "Paste one or more public file links (http / https). Links to private networks are refused."
+msgstr "Bir veya daha fazla herkese açık dosya bağlantısı yapıştırın (http / https). Özel ağlara giden bağlantılar reddedilir."
+
+msgid "Works with any public download link: shared links, CDN files, other websites."
+msgstr "Herhangi bir herkese açık indirme bağlantısıyla çalışır: paylaşılan bağlantılar, CDN dosyaları, diğer web siteleri."
+
+msgid "iCloud Drive"
+msgstr "iCloud Drive"
+
+msgid "Apple does not offer a public web API for iCloud Drive files, so a direct integration is not possible. Download the files on your device and upload them, or sync them to a WebDAV-capable service."
+msgstr "Apple, iCloud Drive dosyaları için herkese açık bir web API'si sunmuyor; bu nedenle doğrudan entegrasyon mümkün değil. Dosyaları cihazınıza indirip yükleyin veya WebDAV destekli bir servise eşitleyin."
+
+msgid "Upload size limit"
+msgstr "Yükleme boyutu sınırı"
+
+msgid "Available"
+msgstr "Mevcut"
+
+msgid "Missing"
+msgstr "Eksik"
+
+msgid "Image library"
+msgstr "Görsel kütüphanesi"
+
+msgid "Uploads directory"
+msgstr "Uploads dizini"
+
+msgid "Uploads writable"
+msgstr "Uploads yazılabilir"
+
+msgid "Yes"
+msgstr "Evet"
+
+msgid "No"
+msgstr "Hayır"
+
+msgid "Direct file access (physical rename)"
+msgstr "Doğrudan dosya erişimi (fiziksel yeniden adlandırma)"
+
+msgid "The .%s file type is disabled. An administrator can enable it in FoldPress > Settings > File Types."
+msgstr ".%s dosya türü kapalı. Bir yönetici FoldPress > Ayarlar > Dosya Türleri bölümünden açabilir."
+
+msgid "Elementor content"
+msgstr "Elementor içeriği"
+
+msgid "Elementor page settings"
+msgstr "Elementor sayfa ayarları"
+
+msgid "Yoast SEO social image"
+msgstr "Yoast SEO sosyal görseli"
+
+msgid "Rank Math social image"
+msgstr "Rank Math sosyal görseli"
+
+msgid "Category image"
+msgstr "Kategori görseli"
+
+msgid "Image field"
+msgstr "Görsel alanı"
+
+msgid "Menu link"
+msgstr "Menü bağlantısı"
+
+msgid "Field: %s"
+msgstr "Alan: %s"
+
+msgid "Uploaded to"
+msgstr "Yüklendiği yer"
+
+msgid "Link in content"
+msgstr "İçerikte bağlantı"
+
+msgid "In content (block / gallery)"
+msgstr "İçerikte (blok / galeri)"
+
+msgid "User"
+msgstr "Kullanıcı"
+
+msgid "Site icon"
+msgstr "Site simgesi"
+
+msgid "Theme settings (Customizer)"
+msgstr "Tema ayarları (Özelleştirici)"
+
+msgid "Site logo"
+msgstr "Site logosu"
+
+msgid "Customizer"
+msgstr "Özelleştirici"
+
+msgid "Widgets"
+msgstr "Bileşenler"
+
+msgid "Plugin / site setting"
+msgstr "Eklenti / site ayarı"
+
+msgid "%d file imported from the cloud."
+msgid_plural "%d files imported from the cloud."
+msgstr[0] "%d dosya buluttan içe aktarıldı."
+msgstr[1] "%d dosya buluttan içe aktarıldı."
+
+msgid "%d folder moved."
+msgid_plural "%d folders moved."
+msgstr[0] "%d klasör taşındı."
+msgstr[1] "%d klasör taşındı."
+
+msgid "%d file moved."
+msgid_plural "%d files moved."
+msgstr[0] "%d dosya taşındı."
+msgstr[1] "%d dosya taşındı."
+
+msgid "%d file deleted."
+msgid_plural "%d files deleted."
+msgstr[0] "%d dosya silindi."
+msgstr[1] "%d dosya silindi."

@@ -1,0 +1,1841 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: AppsTRDesign - FoldPress 1.0.0\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nX-Domain: appstrdesign-foldpress\n"
+
+msgid "Advanced AJAX media file manager with folders, drag and drop, bulk actions, context menu, ZIP/UNZIP and file type grouping. Replaces the default Media Library screens."
+msgstr ""
+
+msgid "AppsTRDesign - FoldPress"
+msgstr ""
+
+msgid "Folders"
+msgstr ""
+
+msgid "OK"
+msgstr ""
+
+msgid "Cancel"
+msgstr ""
+
+msgid "Close"
+msgstr ""
+
+msgid "Error"
+msgstr ""
+
+msgid "Success"
+msgstr ""
+
+msgid "Network error. Please try again."
+msgstr ""
+
+msgid "URL copied to clipboard."
+msgstr ""
+
+msgid "Press Enter to confirm, Esc to cancel"
+msgstr ""
+
+msgid "Download"
+msgstr ""
+
+msgid "Delete"
+msgstr ""
+
+msgid "Delete files permanently?"
+msgstr ""
+
+msgid "Size"
+msgstr ""
+
+msgid "Root (no folder)"
+msgstr ""
+
+msgid "Preview"
+msgstr ""
+
+msgid "Open in new tab"
+msgstr ""
+
+msgid "Preview could not be loaded."
+msgstr ""
+
+msgid "Quick view"
+msgstr ""
+
+msgid "Full layout"
+msgstr ""
+
+msgid "Slide"
+msgstr ""
+
+msgid "This slide has no text."
+msgstr ""
+
+msgid "Only the beginning of this file is shown."
+msgstr ""
+
+msgid "First %d rows are shown."
+msgstr ""
+
+msgid "%d items in this archive"
+msgstr ""
+
+msgid "No preview available for this file type."
+msgstr ""
+
+msgid "Quick view shows the text and tables. Layout, images and fonts may differ from the original."
+msgstr ""
+
+msgid "Change history"
+msgstr ""
+
+msgid "This file has not been renamed yet."
+msgstr ""
+
+msgid "Choose a version to go back to. If the file was renamed on the server, it is renamed back and every link in the database is updated."
+msgstr ""
+
+msgid "Current version"
+msgstr ""
+
+msgid "Go back to this version"
+msgstr ""
+
+msgid "Title"
+msgstr ""
+
+msgid "File name"
+msgstr ""
+
+msgid "Renamed - show history"
+msgstr ""
+
+msgid "Renamed"
+msgstr ""
+
+msgid "Title changed"
+msgstr ""
+
+msgid "Details panel"
+msgstr ""
+
+msgid "Advanced edit"
+msgstr ""
+
+msgid "Restored"
+msgstr ""
+
+msgid "Media Library"
+msgstr ""
+
+msgid "Library"
+msgstr ""
+
+msgid "Open File Manager"
+msgstr ""
+
+msgid "Settings"
+msgstr ""
+
+msgid "All Files"
+msgstr ""
+
+msgid "Uncategorized"
+msgstr ""
+
+msgid "New Folder"
+msgstr ""
+
+msgid "New Subfolder"
+msgstr ""
+
+msgid "Folder name"
+msgstr ""
+
+msgid "The folder is created inside the folder you are viewing."
+msgstr ""
+
+msgid "Create"
+msgstr ""
+
+msgid "Save"
+msgstr ""
+
+msgid "Rename"
+msgstr ""
+
+msgid "Move to"
+msgstr ""
+
+msgid "Move here"
+msgstr ""
+
+msgid "Compress (ZIP)"
+msgstr ""
+
+msgid "Extract here"
+msgstr ""
+
+msgid "Open"
+msgstr ""
+
+msgid "Details"
+msgstr ""
+
+msgid "Copy URL"
+msgstr ""
+
+msgid "Cut"
+msgstr ""
+
+msgid "Paste here"
+msgstr ""
+
+msgid "files cut. Open a folder and press Ctrl+V to move them."
+msgstr ""
+
+msgid "Upload Files"
+msgstr ""
+
+msgid "Drop files to upload"
+msgstr ""
+
+msgid "Files will be uploaded to:"
+msgstr ""
+
+msgid "Uploading"
+msgstr ""
+
+msgid "Uploading %1$d of %2$d"
+msgstr ""
+
+msgid "Upload finished."
+msgstr ""
+
+msgid "Some files could not be uploaded."
+msgstr ""
+
+msgid "Waiting"
+msgstr ""
+
+msgid "Done"
+msgstr ""
+
+msgid "Cancelled"
+msgstr ""
+
+msgid "Minimize"
+msgstr ""
+
+msgid "Search media..."
+msgstr ""
+
+msgid "Select all"
+msgstr ""
+
+msgid "Select folders"
+msgstr ""
+
+msgid "Select all folders"
+msgstr ""
+
+msgid "Select folder"
+msgstr ""
+
+msgid "Deselect"
+msgstr ""
+
+msgid "folders selected"
+msgstr ""
+
+msgid "folders"
+msgstr ""
+
+msgid "sub folders"
+msgstr ""
+
+msgid "Delete folders?"
+msgstr ""
+
+msgid "%1$d folders, %2$d files"
+msgstr ""
+
+msgid "I understand that everything inside will be deleted"
+msgstr ""
+
+msgid "Sub folders and all their files are removed permanently. This cannot be undone."
+msgstr ""
+
+msgid "Delete everything"
+msgstr ""
+
+msgid "The folder structure is kept inside the archive."
+msgstr ""
+
+msgid "Name"
+msgstr ""
+
+msgid "Clear selection"
+msgstr ""
+
+msgid "selected"
+msgstr ""
+
+msgid "files"
+msgstr ""
+
+msgid "This folder is empty."
+msgstr ""
+
+msgid "Drag files here or use the upload button."
+msgstr ""
+
+msgid "Loading..."
+msgstr ""
+
+msgid "Load more"
+msgstr ""
+
+msgid "Previous"
+msgstr ""
+
+msgid "Next"
+msgstr ""
+
+msgid "Page %1$d of %2$d"
+msgstr ""
+
+msgid "Showing %1$d of %2$d"
+msgstr ""
+
+msgid "Are you sure?"
+msgstr ""
+
+msgid "Selected files will be permanently deleted. This cannot be undone."
+msgstr ""
+
+msgid "Delete folder?"
+msgstr ""
+
+msgid "The folder, all of its sub folders and every file inside them will be deleted permanently."
+msgstr ""
+
+msgid "Archive name"
+msgstr ""
+
+msgid "A new ZIP file is created in the current folder."
+msgstr ""
+
+msgid "New name"
+msgstr ""
+
+msgid "Also rename the file on the server"
+msgstr ""
+
+msgid "All image sizes are renamed and every reference in the database (posts, Elementor, WooCommerce, options) is updated."
+msgstr ""
+
+msgid "Choose destination folder"
+msgstr ""
+
+msgid "Type"
+msgstr ""
+
+msgid "Dimensions"
+msgstr ""
+
+msgid "Date"
+msgstr ""
+
+msgid "Alternative text"
+msgstr ""
+
+msgid "File URL"
+msgstr ""
+
+msgid "Caption"
+msgstr ""
+
+msgid "Description"
+msgstr ""
+
+msgid "Uploaded on"
+msgstr ""
+
+msgid "Uploaded by"
+msgstr ""
+
+msgid "Attached to"
+msgstr ""
+
+msgid "Describe the image for screen readers and search engines. Leave empty if purely decorative."
+msgstr ""
+
+msgid "View attachment page"
+msgstr ""
+
+msgid "Edit code"
+msgstr ""
+
+msgid "New File"
+msgstr ""
+
+msgid "Add from cloud"
+msgstr ""
+
+msgid "Import from URL"
+msgstr ""
+
+msgid "One link per line (max 20). The files are downloaded by your server."
+msgstr ""
+
+msgid "File links"
+msgstr ""
+
+msgid "Importing files..."
+msgstr ""
+
+msgid "Import"
+msgstr ""
+
+msgid "Some files could not be imported"
+msgstr ""
+
+msgid "Set up cloud services"
+msgstr ""
+
+msgid "No cloud service is enabled yet."
+msgstr ""
+
+msgid "The cloud service could not be loaded. Check the keys in FoldPress > Settings > Cloud and that this site is allowed in the service console."
+msgstr ""
+
+msgid "Browse files"
+msgstr ""
+
+msgid "Up one level"
+msgstr ""
+
+msgid "Root"
+msgstr ""
+
+msgid "Import %d files"
+msgstr ""
+
+msgid "Type a name with its extension, or pick an extension below."
+msgstr ""
+
+msgid "This extension is allowed."
+msgstr ""
+
+msgid "Add an extension, for example .txt"
+msgstr ""
+
+msgid ".%s is not an allowed file type on this site."
+msgstr ""
+
+msgid ".%s is allowed but cannot be created empty. Upload a file instead."
+msgstr ""
+
+msgid "Open in the code editor after creating"
+msgstr ""
+
+msgid "Created in:"
+msgstr ""
+
+msgid "Newest first"
+msgstr ""
+
+msgid "Oldest first"
+msgstr ""
+
+msgid "Name A-Z"
+msgstr ""
+
+msgid "Name Z-A"
+msgstr ""
+
+msgid "Grid view"
+msgstr ""
+
+msgid "List view"
+msgstr ""
+
+msgid "Group by type"
+msgstr ""
+
+msgid "Classic library"
+msgstr ""
+
+msgid "Menu"
+msgstr ""
+
+msgid "File exceeds the maximum upload size."
+msgstr ""
+
+msgid "Shortcuts & help"
+msgstr ""
+
+msgid "Keyboard shortcuts"
+msgstr ""
+
+msgid "Mouse & touch"
+msgstr ""
+
+msgid "Select all files on the page"
+msgstr ""
+
+msgid "Click"
+msgstr ""
+
+msgid "Add or remove a file from the selection"
+msgstr ""
+
+msgid "Select a range of files"
+msgstr ""
+
+msgid "Cut selected files"
+msgstr ""
+
+msgid "Paste (move) cut files into the open folder"
+msgstr ""
+
+msgid "Move selected files to a folder"
+msgstr ""
+
+msgid "Rename the selected file"
+msgstr ""
+
+msgid "Delete selected files"
+msgstr ""
+
+msgid "Preview the selected file"
+msgstr ""
+
+msgid "Open file details"
+msgstr ""
+
+msgid "Space"
+msgstr ""
+
+msgid "Toggle selection of the focused file"
+msgstr ""
+
+msgid "Move focus between files"
+msgstr ""
+
+msgid "Create a new folder"
+msgstr ""
+
+msgid "Upload files"
+msgstr ""
+
+msgid "Focus the search box"
+msgstr ""
+
+msgid "Clear selection / close panels"
+msgstr ""
+
+msgid "Show this help"
+msgstr ""
+
+msgid "Selection"
+msgstr ""
+
+msgid "File actions"
+msgstr ""
+
+msgid "Navigation"
+msgstr ""
+
+msgid "Select a file"
+msgstr ""
+
+msgid "Double-click"
+msgstr ""
+
+msgid "Right-click"
+msgstr ""
+
+msgid "Open the actions menu (preview, rename, move, zip, unzip, download, delete)"
+msgstr ""
+
+msgid "Drag to folder"
+msgstr ""
+
+msgid "Move files or folders into another folder"
+msgstr ""
+
+msgid "Drop from computer"
+msgstr ""
+
+msgid "Upload files into the open folder (or onto a folder in the sidebar)"
+msgstr ""
+
+msgid "Long press"
+msgstr ""
+
+msgid "Open the actions menu on touch devices"
+msgstr ""
+
+msgid "%s/s"
+msgstr ""
+
+msgid "%s left"
+msgstr ""
+
+msgid "Took %s"
+msgstr ""
+
+msgid "Measuring..."
+msgstr ""
+
+msgid "Import finished."
+msgstr ""
+
+msgid "Importing %1$d of %2$d"
+msgstr ""
+
+msgid "%d failed"
+msgstr ""
+
+msgid "%d cancelled"
+msgstr ""
+
+msgid "Server downloading..."
+msgstr ""
+
+msgid "Adding to the library..."
+msgstr ""
+
+msgid "%1$s / %2$s downloaded"
+msgstr ""
+
+msgid "%s downloaded"
+msgstr ""
+
+msgid "Cancel all"
+msgstr ""
+
+msgid "Cancel the queue?"
+msgstr ""
+
+msgid "%d files that are not finished will be cancelled. A file the server is already downloading may still be added."
+msgstr ""
+
+msgid "%1$d of %2$d files"
+msgstr ""
+
+msgid "Show files"
+msgstr ""
+
+msgid "Hide files"
+msgstr ""
+
+msgid "Preparing upload..."
+msgstr ""
+
+msgid "Converted to"
+msgstr ""
+
+msgid "All types"
+msgstr ""
+
+msgid "Images"
+msgstr ""
+
+msgid "Videos"
+msgstr ""
+
+msgid "Audio"
+msgstr ""
+
+msgid "PDF"
+msgstr ""
+
+msgid "Documents"
+msgstr ""
+
+msgid "Spreadsheets"
+msgstr ""
+
+msgid "Presentations"
+msgstr ""
+
+msgid "Archives"
+msgstr ""
+
+msgid "Code"
+msgstr ""
+
+msgid "Fonts"
+msgstr ""
+
+msgid "Other"
+msgstr ""
+
+msgid "You are not allowed to manage media."
+msgstr ""
+
+msgid "Folder not found."
+msgstr ""
+
+msgid "Folder name is required."
+msgstr ""
+
+msgid "A folder with this name already exists here."
+msgstr ""
+
+msgid "Folder created."
+msgstr ""
+
+msgid "Invalid request."
+msgstr ""
+
+msgid "Folder renamed."
+msgstr ""
+
+msgid "%1$d folders and %2$d files deleted."
+msgstr ""
+
+msgid "%d files could not be deleted (no permission) and were moved out."
+msgstr ""
+
+msgid "A folder cannot be moved into itself."
+msgstr ""
+
+msgid "Archive created."
+msgstr ""
+
+msgid "File renamed. All references in the database were updated."
+msgstr ""
+
+msgid "File renamed."
+msgstr ""
+
+msgid "Changes saved."
+msgstr ""
+
+msgid "No file received."
+msgstr ""
+
+msgid "Enter a file name with an extension, for example notes.txt."
+msgstr ""
+
+msgid "The .%s extension is not allowed on this site. Enable it in FoldPress > Settings > File Types first."
+msgstr ""
+
+msgid ".%s files cannot be created empty. Upload an existing file of this type instead."
+msgstr ""
+
+msgid "File created."
+msgstr ""
+
+msgid "Previous version restored. All references were updated."
+msgstr ""
+
+msgid "%d files extracted."
+msgstr ""
+
+msgid "%d files skipped (unsupported type)."
+msgstr ""
+
+msgid "No file was found at this address (HTTP %d)."
+msgstr ""
+
+msgid "The server refused access (HTTP %d). The link may be private or expired."
+msgstr ""
+
+msgid "The server is limiting requests (HTTP %d). Try again in a few minutes."
+msgstr ""
+
+msgid "The remote server answered with HTTP %d."
+msgstr ""
+
+msgid "Cancelled."
+msgstr ""
+
+msgid "This address opens a web page, not a file. Use the direct download link of the file."
+msgstr ""
+
+msgid "This cloud service is not enabled."
+msgstr ""
+
+msgid "This Google file type cannot be downloaded."
+msgstr ""
+
+msgid "File"
+msgstr ""
+
+msgid "The WebDAV server refused the user name or password."
+msgstr ""
+
+msgid "The WebDAV server answered with HTTP %d. Check the address."
+msgstr ""
+
+msgid "Invalid WebDAV response."
+msgstr ""
+
+msgid "You are not allowed to change these settings."
+msgstr ""
+
+msgid "Save a WebDAV address first."
+msgstr ""
+
+msgid "Connected. %d items found in the root folder."
+msgstr ""
+
+msgid "Code Editor"
+msgstr ""
+
+msgid "Theme not found."
+msgstr ""
+
+msgid "Plugin not found."
+msgstr ""
+
+msgid "This file type cannot be edited as code."
+msgstr ""
+
+msgid "You are not allowed to edit these files."
+msgstr ""
+
+msgid "File not found or not editable."
+msgstr ""
+
+msgid "This file is too large to edit in the browser (max 3 MB)."
+msgstr ""
+
+msgid "Binary files cannot be edited."
+msgstr ""
+
+msgid "This file was changed on the server after you opened it (by another user, an update or FTP)."
+msgstr ""
+
+msgid "The file is not writable. Make it writable on the server (file permissions 644 or 664) before saving."
+msgstr ""
+
+msgid "Could not write the file."
+msgstr ""
+
+msgid "Saved after a full PHP syntax check. Your server does not allow WordPress to call itself (loopback), so the extra runtime check was skipped. If the site shows an error, undo the change via FTP or the file manager of your hosting panel."
+msgstr ""
+
+msgid "WordPress could not reach your site to test the change, and the file could not be written directly. Nothing was changed. Check the file permissions or save the file via FTP."
+msgstr ""
+
+msgid "WordPress tested the change and it causes a fatal error, so the file was restored: %1$s (%2$s, line %3$d)."
+msgstr ""
+
+msgid "File saved successfully."
+msgstr ""
+
+msgid "PHP syntax error: %1$s on line %2$d. Nothing was saved."
+msgstr ""
+
+msgid "Theme"
+msgstr ""
+
+msgid "Plugin"
+msgstr ""
+
+msgid "Media file"
+msgstr ""
+
+msgid "active"
+msgstr ""
+
+msgid "Files"
+msgstr ""
+
+msgid "Filter files..."
+msgstr ""
+
+msgid "No editable files found."
+msgstr ""
+
+msgid "Select a file from the tree to start editing."
+msgstr ""
+
+msgid "Saving..."
+msgstr ""
+
+msgid "File saved"
+msgstr ""
+
+msgid "Your changes were written to the file."
+msgstr ""
+
+msgid "The file could not be saved"
+msgstr ""
+
+msgid "Your PHP code changes were rolled back due to an error"
+msgstr ""
+
+msgid "WordPress tested the change and found a fatal error, so the previous version was kept. Fix the problem and save again."
+msgstr ""
+
+msgid "Go to line"
+msgstr ""
+
+msgid "Line number"
+msgstr ""
+
+msgid "File changed on the server"
+msgstr ""
+
+msgid "Overwrite with my version"
+msgstr ""
+
+msgid "Load server version"
+msgstr ""
+
+msgid "File is not writable"
+msgstr ""
+
+msgid "Read only: this file is not writable on the server. You can view it, but changes cannot be saved until its permissions are changed."
+msgstr ""
+
+msgid "Learn about file permissions"
+msgstr ""
+
+msgid "Unsaved changes"
+msgstr ""
+
+msgid "This file has unsaved changes. Close it anyway?"
+msgstr ""
+
+msgid "Some open files have unsaved changes. Switch anyway? The changes will be lost."
+msgstr ""
+
+msgid "Close without saving"
+msgstr ""
+
+msgid "Switch and discard"
+msgstr ""
+
+msgid "You have unsaved changes."
+msgstr ""
+
+msgid "Documentation"
+msgstr ""
+
+msgid "Function name..."
+msgstr ""
+
+msgid "Look up"
+msgstr ""
+
+msgid "Choose a function or place the cursor on a function name."
+msgstr ""
+
+msgid "Find"
+msgstr ""
+
+msgid "Replace"
+msgstr ""
+
+msgid "Replace all"
+msgstr ""
+
+msgid "Match case"
+msgstr ""
+
+msgid "No results"
+msgstr ""
+
+msgid "%d replacements made."
+msgstr ""
+
+msgid "Word wrap"
+msgstr ""
+
+msgid "Dark theme"
+msgstr ""
+
+msgid "Smaller text"
+msgstr ""
+
+msgid "Larger text"
+msgstr ""
+
+msgid "Ln"
+msgstr ""
+
+msgid "Col"
+msgstr ""
+
+msgid "lines"
+msgstr ""
+
+msgid "Tabs"
+msgstr ""
+
+msgid "Writable"
+msgstr ""
+
+msgid "Read only"
+msgstr ""
+
+msgid "Modified"
+msgstr ""
+
+msgid "Classic editor"
+msgstr ""
+
+msgid "Back to library"
+msgstr ""
+
+msgid "File editing is disabled on this site (DISALLOW_FILE_EDIT)."
+msgstr ""
+
+msgid "Ctrl+S save · Ctrl+F find · Ctrl+H replace · Ctrl+G go to line · Ctrl+/ comment"
+msgstr ""
+
+msgid "Active theme"
+msgstr ""
+
+msgid "Active plugin"
+msgstr ""
+
+msgid "Full screen"
+msgstr ""
+
+msgid "File not found on disk."
+msgstr ""
+
+msgid "Backup could not be written. Check that the uploads folder is writable."
+msgstr ""
+
+msgid "No backup found for this file."
+msgstr ""
+
+msgid "Backup file is missing."
+msgstr ""
+
+msgid "Could not restore the original file."
+msgstr ""
+
+msgid "Choose WebP or AVIF and save the settings first."
+msgstr ""
+
+msgid "Originals restored and the backup folder was removed."
+msgstr ""
+
+msgid "Some backups are still in use, the backup folder was kept."
+msgstr ""
+
+msgid "Edit Media"
+msgstr ""
+
+msgid "Save Changes"
+msgstr ""
+
+msgid "General"
+msgstr ""
+
+msgid "Changing the file name renames every image size on the server and updates all references in the database: posts, pages, Elementor, WooCommerce, widgets, options and other plugins."
+msgstr ""
+
+msgid "Describe the image for screen readers and search engines."
+msgstr ""
+
+msgid "Folder"
+msgstr ""
+
+msgid "File information"
+msgstr ""
+
+msgid "Generated sizes"
+msgstr ""
+
+msgid "Where it is used"
+msgstr ""
+
+msgid "Not used anywhere: no post, page, product, user, term or setting references this file."
+msgstr ""
+
+msgid "Scanned by media ID and file URL in content, custom fields, users, categories and site settings."
+msgstr ""
+
+msgid "Posts, pages and products"
+msgstr ""
+
+msgid "Users"
+msgstr ""
+
+msgid "Categories and terms"
+msgstr ""
+
+msgid "Site settings"
+msgstr ""
+
+msgid "Edit"
+msgstr ""
+
+msgid "All"
+msgstr ""
+
+msgid "places"
+msgstr ""
+
+msgid "Safe to change"
+msgstr ""
+
+msgid "View"
+msgstr ""
+
+msgid "Discard unsaved changes?"
+msgstr ""
+
+msgid "These changes have not been saved and will be lost:"
+msgstr ""
+
+msgid "Discard changes"
+msgstr ""
+
+msgid "Changes discarded."
+msgstr ""
+
+msgid "Crop & rotate"
+msgstr ""
+
+msgid "Danger zone"
+msgstr ""
+
+msgid "Deletes the file and all of its sizes permanently."
+msgstr ""
+
+msgid "Rename the file on the server?"
+msgstr ""
+
+msgid "All image sizes will be renamed and every reference in the database will be updated automatically. Take a backup first on large sites."
+msgstr ""
+
+msgid "Rename and update"
+msgstr ""
+
+msgid "You have unsaved changes. Leave anyway?"
+msgstr ""
+
+msgid "Media item not found."
+msgstr ""
+
+msgid "Featured image"
+msgstr ""
+
+msgid "Product gallery"
+msgstr ""
+
+msgid "In content"
+msgstr ""
+
+msgid "Page builder"
+msgstr ""
+
+msgid "Changes saved. File renamed and %d database references updated."
+msgstr ""
+
+msgid "This version no longer exists."
+msgstr ""
+
+msgid "ZipArchive PHP extension is not available on this server."
+msgstr ""
+
+msgid "Could not create archive."
+msgstr ""
+
+msgid "No files could be added to the archive."
+msgstr ""
+
+msgid "Selected file is not a ZIP archive."
+msgstr ""
+
+msgid "Could not open archive."
+msgstr ""
+
+msgid "Archive contains more than %d entries."
+msgstr ""
+
+msgid "Archive is too large to extract."
+msgstr ""
+
+msgid "Untitled"
+msgstr ""
+
+msgid "Direct file system access is required to rename files."
+msgstr ""
+
+msgid "Invalid file name."
+msgstr ""
+
+msgid "A file with this name already exists."
+msgstr ""
+
+msgid "Could not rename the file on disk."
+msgstr ""
+
+msgid "Filter by folder"
+msgstr ""
+
+msgid "Manage folders"
+msgstr ""
+
+msgid "Search folders..."
+msgstr ""
+
+msgid "No folders found."
+msgstr ""
+
+msgid "New uploads go to"
+msgstr ""
+
+msgid "Show / hide sub folders"
+msgstr ""
+
+msgid "Moved to folder."
+msgstr ""
+
+msgid "Paste a link to embed it (YouTube, Vimeo, X, Spotify, SoundCloud...) or to insert an image or file by its address."
+msgstr ""
+
+msgid "Download to media library"
+msgstr ""
+
+msgid "Copies the file to your site so it does not depend on the other server."
+msgstr ""
+
+msgid "Downloading to the media library..."
+msgstr ""
+
+msgid "File added to the media library."
+msgstr ""
+
+msgid "Show in library"
+msgstr ""
+
+msgid "Enter a valid http(s) address first."
+msgstr ""
+
+msgid "This document could not be read for preview."
+msgstr ""
+
+msgid "Sheet %d"
+msgstr ""
+
+msgid "FoldPress Settings"
+msgstr ""
+
+msgid "File Manager"
+msgstr ""
+
+msgid "Settings saved."
+msgstr ""
+
+msgid "Reset all settings?"
+msgstr ""
+
+msgid "All FoldPress settings return to their defaults. Folders and files are not affected."
+msgstr ""
+
+msgid "Reset"
+msgstr ""
+
+msgid "Add file type"
+msgstr ""
+
+msgid "Extension"
+msgstr ""
+
+msgid "MIME type"
+msgstr ""
+
+msgid "Example: application/x-figma. The uploaded file content must match this type."
+msgstr ""
+
+msgid "Add"
+msgstr ""
+
+msgid "Remove"
+msgstr ""
+
+msgid "This extension is blocked for security reasons."
+msgstr ""
+
+msgid "Enter a valid extension and MIME type."
+msgstr ""
+
+msgid "This extension is already in the list."
+msgstr ""
+
+msgid "Custom"
+msgstr ""
+
+msgid "Scanning library..."
+msgstr ""
+
+msgid "Scan complete."
+msgstr ""
+
+msgid "Nothing to convert. All images are already optimized."
+msgstr ""
+
+msgid "Convert existing images?"
+msgstr ""
+
+msgid "%1$d images will be converted to %2$s. Originals are backed up first and every link in the database is updated. Keep this page open until it finishes."
+msgstr ""
+
+msgid "Convert"
+msgstr ""
+
+msgid "Converting images"
+msgstr ""
+
+msgid "Conversion finished."
+msgstr ""
+
+msgid "Saved"
+msgstr ""
+
+msgid "Restore all originals?"
+msgstr ""
+
+msgid "%d converted images will be replaced by their original files. Converted files are deleted, links are updated back and the backup folder is removed when finished."
+msgstr ""
+
+msgid "Restore"
+msgstr ""
+
+msgid "Restoring originals"
+msgstr ""
+
+msgid "Stopped. You can continue later."
+msgstr ""
+
+msgid "Some files could not be processed:"
+msgstr ""
+
+msgid "Settings were saved. Testing the connection..."
+msgstr ""
+
+msgid "%d settings changed"
+msgstr ""
+
+msgid "File type added"
+msgstr ""
+
+msgid "File type removed"
+msgstr ""
+
+msgid "On"
+msgstr ""
+
+msgid "Off"
+msgstr ""
+
+msgid "Empty"
+msgstr ""
+
+msgid "Changed"
+msgstr ""
+
+msgid "was"
+msgstr ""
+
+msgid "Settings were reset."
+msgstr ""
+
+msgid "Max %1$d x %2$d px"
+msgstr ""
+
+msgid "%d px wide, height proportional"
+msgstr ""
+
+msgid "%d px tall, width proportional"
+msgstr ""
+
+msgid "Original size"
+msgstr ""
+
+msgid "Cropped to exact size"
+msgstr ""
+
+msgid "Scaled, not cropped"
+msgstr ""
+
+msgid "Uploads"
+msgstr ""
+
+msgid "File Types"
+msgstr ""
+
+msgid "Image Sizes"
+msgstr ""
+
+msgid "WebP / AVIF"
+msgstr ""
+
+msgid "Cloud"
+msgstr ""
+
+msgid "System"
+msgstr ""
+
+msgid "Media settings"
+msgstr ""
+
+msgid "Replace the Media Library"
+msgstr ""
+
+msgid "Media > Library and Add New open the FoldPress file manager."
+msgstr ""
+
+msgid "Replace the attachment edit screen"
+msgstr ""
+
+msgid "Use the FoldPress editor for media details and advanced editing."
+msgstr ""
+
+msgid "Replace the Theme and Plugin File Editors"
+msgstr ""
+
+msgid "Use the FoldPress code editor: file tree, tabs, syntax highlighting for PHP, CSS, JS, HTML, Java, C#, C/C++ and more, find & replace, documentation lookup."
+msgstr ""
+
+msgid "Folders in the media modal"
+msgstr ""
+
+msgid "Adds the folder panel to Add Media, featured image and block editor dialogs."
+msgstr ""
+
+msgid "FoldPress design for the media modal"
+msgstr ""
+
+msgid "Restyles the WordPress media dialogs (classic, Gutenberg and front-end) to match FoldPress."
+msgstr ""
+
+msgid "Lightbox preview"
+msgstr ""
+
+msgid "Preview images, videos, audio, PDF, Word, Excel, PowerPoint, text, Markdown, CSV and ZIP files in a full-screen viewer."
+msgstr ""
+
+msgid "Office full-layout view (Microsoft)"
+msgstr ""
+
+msgid "Adds a \"Full layout\" button for Word, Excel and PowerPoint files using Microsoft Office Online. The file URL is sent to Microsoft and the site must be publicly reachable. The built-in quick preview always works without it."
+msgstr ""
+
+msgid "Notification position"
+msgstr ""
+
+msgid "Where success and error notifications appear."
+msgstr ""
+
+msgid "Top right"
+msgstr ""
+
+msgid "Top center"
+msgstr ""
+
+msgid "Top left"
+msgstr ""
+
+msgid "Bottom right"
+msgstr ""
+
+msgid "Bottom center"
+msgstr ""
+
+msgid "Bottom left"
+msgstr ""
+
+msgid "Listing"
+msgstr ""
+
+msgid "Pagination"
+msgstr ""
+
+msgid "How further files are loaded in the file manager."
+msgstr ""
+
+msgid "Load more button"
+msgstr ""
+
+msgid "Numbered pages"
+msgstr ""
+
+msgid "Files per page"
+msgstr ""
+
+msgid "Between 12 and 200."
+msgstr ""
+
+msgid "Default view"
+msgstr ""
+
+msgid "Upload folder structure"
+msgstr ""
+
+msgid "Where new files are stored inside the uploads directory. Existing files are not moved and keep working."
+msgstr ""
+
+msgid "Year / month (WordPress default)"
+msgstr ""
+
+msgid "Single folder (no sub-folders)"
+msgstr ""
+
+msgid "Custom folder + year / month"
+msgstr ""
+
+msgid "Mirror FoldPress folders"
+msgstr ""
+
+msgid "Custom folder name"
+msgstr ""
+
+msgid "Used with \"Custom folder + year / month\". Letters, numbers, dashes and slashes."
+msgstr ""
+
+msgid "Maximum upload size"
+msgstr ""
+
+msgid "0 = server limit (%s). A lower value can be set; the server limit cannot be exceeded."
+msgstr ""
+
+msgid "Clean file names"
+msgstr ""
+
+msgid "Converts Turkish and accented characters (ş, ğ, ı, ü...) and spaces into URL-safe names."
+msgstr ""
+
+msgid "Lowercase file names"
+msgstr ""
+
+msgid "This list decides what can be uploaded: enabled types are accepted, disabled types are refused everywhere (media library, editors, front-end). Executable and script types are always blocked."
+msgstr ""
+
+msgid "Search extensions..."
+msgstr ""
+
+msgid "Enable all"
+msgstr ""
+
+msgid "Disable all"
+msgstr ""
+
+msgid "Custom file types"
+msgstr ""
+
+msgid "No custom file types yet."
+msgstr ""
+
+msgid "Thumbnail"
+msgstr ""
+
+msgid "Medium"
+msgstr ""
+
+msgid "Large"
+msgstr ""
+
+msgid "Maximum width x height in pixels."
+msgstr ""
+
+msgid "Crop thumbnails to exact size"
+msgstr ""
+
+msgid "Big image threshold"
+msgstr ""
+
+msgid "Larger uploads are scaled down to this size. 0 keeps the original size."
+msgstr ""
+
+msgid "JPEG / WebP quality"
+msgstr ""
+
+msgid "Compression quality for generated images (10-100)."
+msgstr ""
+
+msgid "Additional sizes (themes and plugins)"
+msgstr ""
+
+msgid "Turn off sizes you do not need to save disk space. Applies to new uploads."
+msgstr ""
+
+msgid "WebP / AVIF conversion"
+msgstr ""
+
+msgid "JPEG and PNG images are converted automatically on upload. Existing media can be converted below. Originals are always backed up and can be restored at any time. Files that already are WebP or AVIF are never touched."
+msgstr ""
+
+msgid "Keep original formats"
+msgstr ""
+
+msgid "Best compatibility, about 30% smaller"
+msgstr ""
+
+msgid "Not supported by this server"
+msgstr ""
+
+msgid "Smallest files, about 50% smaller"
+msgstr ""
+
+msgid "Output format"
+msgstr ""
+
+msgid "Low"
+msgstr ""
+
+msgid "High"
+msgstr ""
+
+msgid "Quality"
+msgstr ""
+
+msgid "Higher quality means larger files. Medium is recommended for most sites."
+msgstr ""
+
+msgid "Custom quality"
+msgstr ""
+
+msgid "Lower values give smaller files with more visible compression."
+msgstr ""
+
+msgid "Existing media"
+msgstr ""
+
+msgid "Can be converted"
+msgstr ""
+
+msgid "Converted (backed up)"
+msgstr ""
+
+msgid "Already WebP / AVIF"
+msgstr ""
+
+msgid "Scan library"
+msgstr ""
+
+msgid "Convert existing images"
+msgstr ""
+
+msgid "Stop"
+msgstr ""
+
+msgid "Restore originals"
+msgstr ""
+
+msgid "Cloud import"
+msgstr ""
+
+msgid "Let editors pick files from cloud storage and add them to the media library. Files are downloaded by your server and go through the same type, size and conversion rules as normal uploads."
+msgstr ""
+
+msgid "Copy"
+msgstr ""
+
+msgid "Pick files and Google Docs / Sheets / Slides (exported as DOCX, XLSX, PPTX)."
+msgstr ""
+
+msgid "Google Cloud Console: create a project and enable \"Google Drive API\" and \"Google Picker API\"."
+msgstr ""
+
+msgid "Create an API key and an OAuth client ID (Web application). Add the origin below to \"Authorized JavaScript origins\"."
+msgstr ""
+
+msgid "Paste the values here. The project number is the App ID."
+msgstr ""
+
+msgid "Authorized JavaScript origin"
+msgstr ""
+
+msgid "OAuth client ID"
+msgstr ""
+
+msgid "API key"
+msgstr ""
+
+msgid "App ID (project number)"
+msgstr ""
+
+msgid "Choose files with the official Dropbox Chooser."
+msgstr ""
+
+msgid "Dropbox App Console: create an app (Scoped access)."
+msgstr ""
+
+msgid "Under \"Chooser / Saver / Embedder domains\" add your domain below."
+msgstr ""
+
+msgid "Paste the App key."
+msgstr ""
+
+msgid "Domain"
+msgstr ""
+
+msgid "App key"
+msgstr ""
+
+msgid "Personal OneDrive and OneDrive for Business / SharePoint."
+msgstr ""
+
+msgid "Azure portal > App registrations: register an app (any account type)."
+msgstr ""
+
+msgid "Authentication > add platform \"Single-page application\" with the redirect URI below. Enable access and ID tokens."
+msgstr ""
+
+msgid "Paste the Application (client) ID."
+msgstr ""
+
+msgid "Redirect URI"
+msgstr ""
+
+msgid "Application (client) ID"
+msgstr ""
+
+msgid "WebDAV / own cloud"
+msgstr ""
+
+msgid "Nextcloud, ownCloud, Synology, QNAP, pCloud, Yandex Disk, Seafile and any WebDAV server, including servers on your own network."
+msgstr ""
+
+msgid "Nextcloud / ownCloud address example: https://cloud.example.com/remote.php/dav/files/USERNAME/ . Use an app password instead of your main password."
+msgstr ""
+
+msgid "Display name"
+msgstr ""
+
+msgid "WebDAV address"
+msgstr ""
+
+msgid "User name"
+msgstr ""
+
+msgid "Password / app password"
+msgstr ""
+
+msgid "Saved - leave empty to keep"
+msgstr ""
+
+msgid "Test connection"
+msgstr ""
+
+msgid "Paste one or more public file links (http / https). Links to private networks are refused."
+msgstr ""
+
+msgid "Works with any public download link: shared links, CDN files, other websites."
+msgstr ""
+
+msgid "iCloud Drive"
+msgstr ""
+
+msgid "Apple does not offer a public web API for iCloud Drive files, so a direct integration is not possible. Download the files on your device and upload them, or sync them to a WebDAV-capable service."
+msgstr ""
+
+msgid "Upload size limit"
+msgstr ""
+
+msgid "Available"
+msgstr ""
+
+msgid "Missing"
+msgstr ""
+
+msgid "Image library"
+msgstr ""
+
+msgid "Uploads directory"
+msgstr ""
+
+msgid "Uploads writable"
+msgstr ""
+
+msgid "Yes"
+msgstr ""
+
+msgid "No"
+msgstr ""
+
+msgid "Direct file access (physical rename)"
+msgstr ""
+
+msgid "The .%s file type is disabled. An administrator can enable it in FoldPress > Settings > File Types."
+msgstr ""
+
+msgid "Elementor content"
+msgstr ""
+
+msgid "Elementor page settings"
+msgstr ""
+
+msgid "Yoast SEO social image"
+msgstr ""
+
+msgid "Rank Math social image"
+msgstr ""
+
+msgid "Category image"
+msgstr ""
+
+msgid "Image field"
+msgstr ""
+
+msgid "Menu link"
+msgstr ""
+
+msgid "Field: %s"
+msgstr ""
+
+msgid "Uploaded to"
+msgstr ""
+
+msgid "Link in content"
+msgstr ""
+
+msgid "In content (block / gallery)"
+msgstr ""
+
+msgid "User"
+msgstr ""
+
+msgid "Site icon"
+msgstr ""
+
+msgid "Theme settings (Customizer)"
+msgstr ""
+
+msgid "Site logo"
+msgstr ""
+
+msgid "Customizer"
+msgstr ""
+
+msgid "Widgets"
+msgstr ""
+
+msgid "Plugin / site setting"
+msgstr ""
+
+msgid "%d file imported from the cloud."
+msgid_plural "%d files imported from the cloud."
+msgstr[0] ""
+msgstr[1] ""
+
+msgid "%d folder moved."
+msgid_plural "%d folders moved."
+msgstr[0] ""
+msgstr[1] ""
+
+msgid "%d file moved."
+msgid_plural "%d files moved."
+msgstr[0] ""
+msgstr[1] ""
+
+msgid "%d file deleted."
+msgid_plural "%d files deleted."
+msgstr[0] ""
+msgstr[1] ""
