@@ -26,6 +26,7 @@ Klasörler, sürükle bırak, toplu işlemler, ZIP / UNZIP, WebP / AVIF, tam don
 - [Kurulum](#kurulum)
 - [Klavye kısayolları](#klavye-kısayolları)
 - [Bulut içe aktarma kurulumu](#bulut-içe-aktarma-kurulumu)
+- [Başka eklentiden geçiş](#başka-eklentiden-geçiş)
 - [Güvenlik](#güvenlik)
 - [Harici servisler](#harici-servisler)
 - [Sık sorulan sorular](#sık-sorulan-sorular)
@@ -97,8 +98,20 @@ WordPress ortam kütüphanesi düz bir listedir. Site birkaç yüz dosyaya ulaş
 - Yeniden tasarlanan **Adresten ekle**: **Ortam kütüphanesine indir** ve canlı ilerleme.
 - Ek dosya bilgileri, galeri ve oynatma listesi ayarlarında yenilenen alanlar, seçim kutuları, onay kutuları ve hizalama düğmeleri.
 
+### İçe / dışa aktarma ve geçiş
+- FileBird, Real Media Library, HappyFiles, Folders (Premio), WP Media Folder, Enhanced Media Library, Media Library Folders, Wicked Folders, Media Library Assistant, Mediamatic ve WP Media Folders eklentilerinden **tek tıkla içe aktarma** — veriler doğrudan veritabanından okunur, diğer eklenti devre dışı olsa bile.
+- **Dışa aktarma**: FoldPress JSON (dosya yollarıyla tam yedek), klasör yollu CSV (Excel / Google E-Tablolar) veya **FileBird uyumlu CSV**.
+- **Dosyadan içe aktarma**: FoldPress JSON / CSV, FileBird CSV ve genel JSON / CSV. Dosyalar aynı sitede ID ile, aksi halde dosya yolu ve adıyla eşleştirilir — klasörler siteler arasında da taşınır.
+- **Başka eklentiye kopyalama**: FoldPress klasörlerini FileBird, HappyFiles, Folders, WP Media Folder, Enhanced Media Library ve diğerlerinin kendi yapısına yazar; diğer eklentiler onları tanır.
+- Birleştir veya ayrı içe aktarma klasörü, mevcut atamaları koru veya üzerine yaz; ilerleme çubuklu parça parça işlem. Ortam dosyaları asla taşınmaz veya değiştirilmez.
+
+### Güvenlik anahtarları
+- **Kod düzenleyicileri kapat** — `DISALLOW_FILE_EDIT` gibi: Tema / Eklenti Dosya Düzenleyicileri, FoldPress kod düzenleyicisi ve menüleri tüm kullanıcılar için kalkar.
+- **Tema ve eklenti yönetimini kilitle** — `DISALLOW_FILE_MODS` gibi: tema ve eklenti kurma, yükleme, güncelleme ve silme kapanır; *Yeni Ekle* menüleri kalkar.
+- İstediğiniz an **FoldPress › Ayarlar**'dan geri açabilirsiniz; `wp-config.php` sabitleri de dikkate alınır.
+
 ### Ayarlar
-- Sekmeli ayarlar sayfası: Genel, Yüklemeler, Dosya Türleri, Görsel Boyutları, WebP / AVIF, Bulut, Sistem.
+- Sekmeli ayarlar sayfası: Genel, Yüklemeler, Dosya Türleri, Görsel Boyutları, WebP / AVIF, Bulut, İçe / Dışa Aktar, Sistem.
 - Kaynak, alan adı ve yönlendirme URI'si için kopyalama düğmeli **adım adım bulut kurulumu** ve WebDAV bağlantı testi.
 - **Kaydedilmemiş değişiklik koruması**: alt çubuk ve değişen her ayarı adıyla, eski ve yeni değeriyle listeleyen iptal penceresi.
 
@@ -122,6 +135,8 @@ WordPress ortam kütüphanesi düz bir listedir. Site birkaç yüz dosyaya ulaş
 | ![İçe aktarma kuyruğu](screenshots/tr/13-import-queue.png) **İçe aktarma kuyruğu** — canlı ilerleme, hız, kalan süre | ![Ortam ekle](screenshots/tr/14-media-modal.png) **Ortam ekle** — klasör paneli ve hızlı işlemler |
 | ![Adresten ekle](screenshots/tr/15-insert-from-url.png) **Adresten ekle** — kütüphaneye indirme | ![Galeri](screenshots/tr/16-gallery-settings.png) **Galeri düzenleme** — yenilenen ayarlar |
 | ![Bulut ayarları](screenshots/tr/17-settings-cloud.png) **Bulut ayarları** — adım adım kurulum | ![Kaydedilmemiş değişiklikler](screenshots/tr/18-settings-unsaved.png) **Kaydedilmemiş değişiklikler** — her ayar adıyla |
+| ![İçe / Dışa Aktar](screenshots/tr/19-import-export.png) **İçe / Dışa Aktar** — algılanan eklentiler, dosya, seçenekler | ![İçe aktarma özeti](screenshots/tr/20-import-confirm.png) Başlamadan önce **içe aktarma özeti** |
+| ![Başka eklentiye kopyala](screenshots/tr/21-copy-to-plugin.png) **Dışa aktar ve başka eklentiye kopyala** | ![Güvenlik anahtarları](screenshots/tr/22-security-switches.png) **Güvenlik anahtarları** — kod düzenleyiciler, tema / eklenti yönetimi |
 
 ## Kurulum
 
@@ -162,6 +177,36 @@ Gereksinimler: WordPress 6.0+, PHP 7.4+. ZIP özellikleri için ZipArchive; dön
 
 > **iCloud Drive** için herkese açık bir web API'si yoktur, bu yüzden entegre edilemez. Bu dosyaları WebDAV destekli bir servise eşitleyin.
 
+## Başka eklentiden geçiş
+
+**FoldPress › Ayarlar › İçe / Dışa Aktar** bölümünü açın.
+
+| Eklenti | Klasörlerin tutulduğu yer | İçe aktar | Kopyala |
+|---|---|:---:|:---:|
+| FileBird 4+ | `fbv`, `fbv_attachment_folder` tabloları | ✓ | ✓ |
+| FileBird 3.x | `nt_wmc_folder` taksonomisi | ✓ | – |
+| Real Media Library | `realmedialibrary`, `realmedialibrary_posts` tabloları | ✓ | – |
+| Media Library Folders (Max Foundry) | `mgmlp_folders` tablosu | ✓ | – |
+| HappyFiles | `happyfiles_category` taksonomisi | ✓ | ✓ |
+| Folders (Premio) | `media_folder` taksonomisi | ✓ | ✓ |
+| WP Media Folder (JoomUnited) | `wpmf-category` taksonomisi | ✓ | ✓ |
+| Enhanced Media Library | `media_category` taksonomisi | ✓ | ✓ |
+| Wicked Folders | `wf_attachment_folders` taksonomisi | ✓ | ✓ |
+| Media Library Assistant | `attachment_category` taksonomisi | ✓ | ✓ |
+| Mediamatic | `mediamatic_wpfolder` taksonomisi | ✓ | ✓ |
+| WP Media Folders | `feml-folder` taksonomisi | ✓ | ✓ |
+
+**Dosya biçimleri**
+
+| Biçim | Dışa aktar | İçe aktar | Not |
+|---|:---:|:---:|---|
+| FoldPress JSON | ✓ | ✓ | `format: foldpress-folders`, klasör ağacı + dosya ID'leri ve yolları. Siteler arası taşıma için en iyisi. |
+| Klasör yollu CSV | ✓ | ✓ | `folder_path, file, attachment_id, url, site` — dosya başına bir satır. |
+| FileBird CSV | ✓ | ✓ | `id, name, parent, type, created_by, ord, attachment_ids, post_type, site, color`, ID'ler `\|` ile ayrılır. |
+| Genel JSON / CSV | – | ✓ | Klasör adı / üst klasör / dosya sütunları veya iç içe `children` otomatik algılanır. |
+
+FoldPress klasörleri özel bir taksonomidir (`foldpress_folder`); taksonomi tabanlı klasörleri içe aktaran diğer eklentiler onu doğrudan okuyabilir.
+
 ## Güvenlik
 
 - Her AJAX isteği nonce ve yetki kontrolleriyle korunur (`upload_files`, `edit_post`, `delete_post`, `edit_themes`, `edit_plugins`, `manage_options`).
@@ -182,6 +227,10 @@ FoldPress tamamen çevrimdışı çalışır. İsteğe bağlı özellikler **yal
 
 ## Sık sorulan sorular
 
+**FileBird, Real Media Library, HappyFiles… kullanıyorum, geçebilir miyim?** Evet — *Ayarlar › İçe / Dışa Aktar* algılanan her eklentiyi listeler; tek tıkla klasörler ve dosya atamaları aktarılır.
+
+**Sonra başka bir eklentiye dönebilir miyim?** Evet — *FoldPress klasörlerini başka bir eklentiye kopyala* klasörlerinizi o eklentinin kendi yapısına yazar ya da FileBird uyumlu CSV dışa aktarabilirsiniz.
+
 **Dosyaları klasörlere koyduğumda taşınıyorlar mı?** Hayır. Klasörler sanaldır (özel bir taksonomi), bu yüzden adresler asla değişmez. Yalnızca isteğe bağlı *fiziksel yeniden adlandırma* dosyalara dokunur ve tüm bağlantıları günceller.
 
 **Klasik kütüphaneye dönebilir miyim?** Evet — bir *Klasik kütüphane* bağlantısı vardır ve her değişiklik Ayarlar'dan kapatılabilir.
@@ -190,7 +239,7 @@ FoldPress tamamen çevrimdışı çalışır. İsteğe bağlı özellikler **yal
 
 ## Değişiklik günlüğü
 
-Tam değişiklik günlüğü için [`readme.txt`](appstrdesign-foldpress/readme.txt) dosyasına bakın.
+Tam değişiklik günlüğü için [`readme.txt`](../appstrdesign-foldpress/readme.txt) dosyasına bakın.
 
 ## Lisans
 

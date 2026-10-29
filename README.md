@@ -26,6 +26,7 @@ Folders, drag & drop, bulk actions, ZIP / UNZIP, WebP / AVIF, a full code editor
 - [Installation](#installation)
 - [Keyboard shortcuts](#keyboard-shortcuts)
 - [Cloud import setup](#cloud-import-setup)
+- [Migrating from another plugin](#migrating-from-another-plugin)
 - [Security](#security)
 - [External services](#external-services)
 - [FAQ](#faq)
@@ -97,8 +98,20 @@ The WordPress media library is a flat list. Once a site has a few hundred files 
 - **Insert from URL** redesigned, with **Download to media library** and live progress.
 - Redesigned fields, selects, checkboxes and alignment buttons in attachment details, gallery and playlist settings.
 
+### Import, export & migration
+- **One-click import** from FileBird, Real Media Library, HappyFiles, Folders (Premio), WP Media Folder, Enhanced Media Library, Media Library Folders, Wicked Folders, Media Library Assistant, Mediamatic and WP Media Folders — read straight from the database, even when the other plugin is deactivated.
+- **Export** as FoldPress JSON (full backup with file paths), CSV with folder paths (Excel / Google Sheets) or **FileBird compatible CSV**.
+- **Import files**: FoldPress JSON / CSV, FileBird CSV and generic JSON / CSV. Files are matched by ID on the same site, otherwise by file path and name — folders move between sites too.
+- **Copy into another plugin**: writes FoldPress folders into the structure of FileBird, HappyFiles, Folders, WP Media Folder, Enhanced Media Library and more, so other plugins recognise them.
+- Merge or separate import folder, keep or overwrite existing assignments, batched with a progress bar. Media files are never moved or changed.
+
+### Security switches
+- **Turn off the code editors** — like `DISALLOW_FILE_EDIT`: Theme / Plugin File Editors, the FoldPress code editor and their menus are removed for every user.
+- **Lock theme and plugin management** — like `DISALLOW_FILE_MODS`: no installing, uploading, updating or deleting themes and plugins; the *Add New* menus disappear.
+- Switch them back on from **FoldPress › Settings** at any time; the `wp-config.php` constants are respected too.
+
 ### Settings
-- Tabbed settings page: General, Uploads, File Types, Image Sizes, WebP / AVIF, Cloud, System.
+- Tabbed settings page: General, Uploads, File Types, Image Sizes, WebP / AVIF, Cloud, Import / Export, System.
 - **Step-by-step cloud setup** with copy buttons for origins, domains and redirect URIs, plus a WebDAV connection test.
 - **Unsaved-changes guard**: a bottom bar and a discard dialog that lists every changed setting by name with its old and new value.
 
@@ -122,6 +135,8 @@ The WordPress media library is a flat list. Once a site has a few hundred files 
 | ![Import queue](screenshots/en/13-import-queue.png) **Import queue** — live progress, speed, ETA | ![Add Media](screenshots/en/14-media-modal.png) **Add Media** — folder panel and quick actions |
 | ![Insert from URL](screenshots/en/15-insert-from-url.png) **Insert from URL** — download to the library | ![Gallery](screenshots/en/16-gallery-settings.png) **Gallery editing** — redesigned settings |
 | ![Cloud settings](screenshots/en/17-settings-cloud.png) **Cloud settings** — step-by-step setup | ![Unsaved changes](screenshots/en/18-settings-unsaved.png) **Unsaved changes** — every setting by name |
+| ![Import / Export](screenshots/en/19-import-export.png) **Import / Export** — detected plugins, files, options | ![Import summary](screenshots/en/20-import-confirm.png) **Import summary** before starting |
+| ![Copy into another plugin](screenshots/en/21-copy-to-plugin.png) **Export & copy** into another plugin | ![Security switches](screenshots/en/22-security-switches.png) **Security switches** — code editors, theme / plugin management |
 
 ## Installation
 
@@ -162,6 +177,36 @@ Open **FoldPress › Settings › Cloud**. Each service shows step-by-step instr
 
 > **iCloud Drive** has no public web API, so it cannot be integrated. Sync those files to a WebDAV-capable service instead.
 
+## Migrating from another plugin
+
+Open **FoldPress › Settings › Import / Export**.
+
+| Plugin | Where its folders live | Import | Copy into |
+|---|---|:---:|:---:|
+| FileBird 4+ | tables `fbv`, `fbv_attachment_folder` | ✓ | ✓ |
+| FileBird 3.x | taxonomy `nt_wmc_folder` | ✓ | – |
+| Real Media Library | tables `realmedialibrary`, `realmedialibrary_posts` | ✓ | – |
+| Media Library Folders (Max Foundry) | table `mgmlp_folders` | ✓ | – |
+| HappyFiles | taxonomy `happyfiles_category` | ✓ | ✓ |
+| Folders (Premio) | taxonomy `media_folder` | ✓ | ✓ |
+| WP Media Folder (JoomUnited) | taxonomy `wpmf-category` | ✓ | ✓ |
+| Enhanced Media Library | taxonomy `media_category` | ✓ | ✓ |
+| Wicked Folders | taxonomy `wf_attachment_folders` | ✓ | ✓ |
+| Media Library Assistant | taxonomy `attachment_category` | ✓ | ✓ |
+| Mediamatic | taxonomy `mediamatic_wpfolder` | ✓ | ✓ |
+| WP Media Folders | taxonomy `feml-folder` | ✓ | ✓ |
+
+**File formats**
+
+| Format | Export | Import | Notes |
+|---|:---:|:---:|---|
+| FoldPress JSON | ✓ | ✓ | `format: foldpress-folders`, folder tree + file IDs and paths. Best for moving between sites. |
+| CSV with folder paths | ✓ | ✓ | `folder_path, file, attachment_id, url, site` — one row per file. |
+| FileBird CSV | ✓ | ✓ | `id, name, parent, type, created_by, ord, attachment_ids, post_type, site, color`, IDs separated by `\|`. |
+| Generic JSON / CSV | – | ✓ | Folder name / parent / attachments columns or nested `children` are detected automatically. |
+
+FoldPress folders are a private taxonomy (`foldpress_folder`); other plugins that import taxonomy-based folders can read it directly.
+
 ## Security
 
 - Every AJAX request is protected by a nonce and capability checks (`upload_files`, `edit_post`, `delete_post`, `edit_themes`, `edit_plugins`, `manage_options`).
@@ -182,6 +227,10 @@ FoldPress works fully offline. Optional features talk to third parties **only wh
 
 ## FAQ
 
+**Can I switch from FileBird, Real Media Library, HappyFiles…?** Yes — *Settings › Import / Export* lists every detected plugin; one click imports folders and file assignments.
+
+**Can I go back to another plugin later?** Yes — *Copy FoldPress folders into another plugin* writes your folders into that plugin's own structure, or export a FileBird compatible CSV.
+
 **Are my files moved when I put them in folders?** No. Folders are virtual (a private taxonomy), so URLs never change. Only the optional *physical rename* touches files, and it updates every link.
 
 **Can I go back to the classic library?** Yes — there is a *Classic library* link, and each replacement can be turned off in Settings.
@@ -190,7 +239,7 @@ FoldPress works fully offline. Optional features talk to third parties **only wh
 
 ## Changelog
 
-See [`readme.txt`](appstrdesign-foldpress/readme.txt) for the full changelog.
+See [`readme.txt`](../appstrdesign-foldpress/readme.txt) for the full changelog.
 
 ## License
 
