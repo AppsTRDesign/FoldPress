@@ -107,6 +107,25 @@ class FoldPress_Settings_Page {
 					'emptyWord'    => __( 'Empty', 'appstrdesign-foldpress' ),
 					'changedWord'  => __( 'Changed', 'appstrdesign-foldpress' ),
 					'wasWord'      => __( 'was', 'appstrdesign-foldpress' ),
+					'migTitle'     => __( 'Import folders?', 'appstrdesign-foldpress' ),
+					'copyTitle'    => __( 'Copy folders?', 'appstrdesign-foldpress' ),
+					/* translators: 1: source, 2: target */
+					'migFromTo'    => __( '%1$s to %2$s', 'appstrdesign-foldpress' ),
+					'migFolders'   => __( 'Folders', 'appstrdesign-foldpress' ),
+					'migFiles'     => __( 'Files to place', 'appstrdesign-foldpress' ),
+					'migSkipped'   => __( 'Not found on this site', 'appstrdesign-foldpress' ),
+					'migSkipHint'  => __( 'Files that are not in this media library are skipped. Upload them first, then import again.', 'appstrdesign-foldpress' ),
+					'migSafe'      => __( 'Media files are not moved or changed. Only folder assignments are written.', 'appstrdesign-foldpress' ),
+					'migStart'     => __( 'Start', 'appstrdesign-foldpress' ),
+					'migRunning'   => __( 'Importing folders', 'appstrdesign-foldpress' ),
+					'migCopying'   => __( 'Copying folders', 'appstrdesign-foldpress' ),
+					'migReading'   => __( 'Reading data...', 'appstrdesign-foldpress' ),
+					/* translators: 1: files placed, 2: folders */
+					'migDone'      => __( 'Finished: %1$d files placed in %2$d folders.', 'appstrdesign-foldpress' ),
+					/* translators: 1: done, 2: total */
+					'migCount'     => __( '%1$d / %2$d files', 'appstrdesign-foldpress' ),
+					'openManager'  => __( 'Open the file manager', 'appstrdesign-foldpress' ),
+					'managerUrl'   => FoldPress_Admin::url(),
 				),
 			)
 		);
@@ -243,6 +262,7 @@ class FoldPress_Settings_Page {
 			'images'  => array( __( 'Image Sizes', 'appstrdesign-foldpress' ), 'image' ),
 			'optimize' => array( __( 'WebP / AVIF', 'appstrdesign-foldpress' ), 'zap' ),
 			'cloud'   => array( __( 'Cloud', 'appstrdesign-foldpress' ), 'cloud' ),
+			'transfer' => array( __( 'Import / Export', 'appstrdesign-foldpress' ), 'download' ),
 			'system'  => array( __( 'System', 'appstrdesign-foldpress' ), 'cpu' ),
 		);
 		$upload = wp_get_upload_dir();
@@ -273,6 +293,8 @@ class FoldPress_Settings_Page {
 								$this->toggle( 'replace_library', __( 'Replace the Media Library', 'appstrdesign-foldpress' ), __( 'Media > Library and Add New open the FoldPress file manager.', 'appstrdesign-foldpress' ) );
 								$this->toggle( 'replace_editor', __( 'Replace the attachment edit screen', 'appstrdesign-foldpress' ), __( 'Use the FoldPress editor for media details and advanced editing.', 'appstrdesign-foldpress' ) );
 								$this->toggle( 'replace_code_editor', __( 'Replace the Theme and Plugin File Editors', 'appstrdesign-foldpress' ), __( 'Use the FoldPress code editor: file tree, tabs, syntax highlighting for PHP, CSS, JS, HTML, Java, C#, C/C++ and more, find & replace, documentation lookup.', 'appstrdesign-foldpress' ) );
+								$this->toggle( 'disable_file_edit', __( 'Turn off the code editors', 'appstrdesign-foldpress' ), __( 'Works like DISALLOW_FILE_EDIT: the Theme and Plugin File Editors, the FoldPress code editor and their menus are removed for every user. Recommended for live sites.', 'appstrdesign-foldpress' ) );
+								$this->toggle( 'disable_file_mods', __( 'Lock theme and plugin management', 'appstrdesign-foldpress' ), __( 'Works like DISALLOW_FILE_MODS: installing, uploading, updating and deleting themes and plugins (and core updates) is turned off and the "Add New" menus disappear. Activating and deactivating still works. Switch it off here before updating.', 'appstrdesign-foldpress' ) );
 								$this->toggle( 'modal_integration', __( 'Folders in the media modal', 'appstrdesign-foldpress' ), __( 'Adds the folder panel to Add Media, featured image and block editor dialogs.', 'appstrdesign-foldpress' ) );
 								$this->toggle( 'modal_theme', __( 'FoldPress design for the media modal', 'appstrdesign-foldpress' ), __( 'Restyles the WordPress media dialogs (classic, Gutenberg and front-end) to match FoldPress.', 'appstrdesign-foldpress' ) );
 								$this->toggle( 'lightbox', __( 'Lightbox preview', 'appstrdesign-foldpress' ), __( 'Preview images, videos, audio, PDF, Word, Excel, PowerPoint, text, Markdown, CSV and ZIP files in a full-screen viewer.', 'appstrdesign-foldpress' ) );
@@ -551,6 +573,80 @@ class FoldPress_Settings_Page {
 								?>
 							</div>
 							<div class="afp-cloud__note"><span data-icon="info"></span><div><strong><?php esc_html_e( 'iCloud Drive', 'appstrdesign-foldpress' ); ?></strong><span><?php esc_html_e( 'Apple does not offer a public web API for iCloud Drive files, so a direct integration is not possible. Download the files on your device and upload them, or sync them to a WebDAV-capable service.', 'appstrdesign-foldpress' ); ?></span></div></div>
+						</section>
+
+						<section class="afp-set__panel" data-panel="transfer">
+							<h2><?php esc_html_e( 'Import / Export', 'appstrdesign-foldpress' ); ?></h2>
+							<p class="afp-set__lead"><?php esc_html_e( 'Bring your folders over from another media folder plugin, move them between sites, or hand them to another plugin. Only folder assignments are written; media files are never moved, renamed or deleted.', 'appstrdesign-foldpress' ); ?></p>
+							<div class="afp-mig" data-mig>
+								<h3><?php esc_html_e( 'Import from another plugin', 'appstrdesign-foldpress' ); ?></h3>
+								<?php $sources = FoldPress_Migrate::sources(); ?>
+								<?php if ( $sources ) : ?>
+									<div class="afp-mig__grid">
+										<?php foreach ( $sources as $k => $src ) : ?>
+											<div class="afp-mig__card">
+												<span class="afp-mig__logo"><span data-icon="folder"></span></span>
+												<span class="afp-mig__txt"><strong><?php echo esc_html( $src['name'] ); ?></strong><small><?php echo esc_html( $src['author'] ); ?> &middot; <?php echo esc_html( sprintf( /* translators: 1: folders, 2: files */ __( '%1$d folders, %2$d files', 'appstrdesign-foldpress' ), $src['folders'], $src['files'] ) ); ?></small></span>
+												<button type="button" class="afp-btn afp-btn--primary" data-mig-source="<?php echo esc_attr( $k ); ?>"><span data-icon="download"></span><span><?php esc_html_e( 'Import', 'appstrdesign-foldpress' ); ?></span></button>
+											</div>
+										<?php endforeach; ?>
+									</div>
+								<?php else : ?>
+									<div class="afp-mig__empty"><span data-icon="info"></span><div><strong><?php esc_html_e( 'No folders from other plugins were found on this site.', 'appstrdesign-foldpress' ); ?></strong><span><?php esc_html_e( 'Supported: FileBird, Real Media Library, HappyFiles, Folders (Premio), WP Media Folder, Enhanced Media Library, Media Library Folders, Wicked Folders, Media Library Assistant, Mediamatic, WP Media Folders. Their data is read even when the plugin is deactivated.', 'appstrdesign-foldpress' ); ?></span></div></div>
+								<?php endif; ?>
+
+								<h3><?php esc_html_e( 'Import from a file', 'appstrdesign-foldpress' ); ?></h3>
+								<div class="afp-card-box">
+									<div class="afp-set-row"><span class="afp-set-row__txt"><strong><?php esc_html_e( 'Export file', 'appstrdesign-foldpress' ); ?></strong><small><?php esc_html_e( 'FoldPress JSON / CSV, FileBird CSV or any JSON / CSV with folder names and file paths. Files are matched by ID on the same site, otherwise by file path and name.', 'appstrdesign-foldpress' ); ?></small></span>
+										<span class="afp-set-row__ctl afp-mig__file"><label class="afp-btn"><span data-icon="upload"></span><span data-mig-fname><?php esc_html_e( 'Choose file', 'appstrdesign-foldpress' ); ?></span><input type="file" form="afp-mig-none" accept=".json,.csv,.txt,application/json,text/csv" data-mig-file hidden></label><button type="button" class="afp-btn afp-btn--primary" data-mig-import disabled><span data-icon="download"></span><span><?php esc_html_e( 'Import', 'appstrdesign-foldpress' ); ?></span></button></span>
+									</div>
+								</div>
+
+								<h3><?php esc_html_e( 'Import options', 'appstrdesign-foldpress' ); ?></h3>
+								<div class="afp-card-box">
+									<?php
+									$this->row(
+										__( 'Folders', 'appstrdesign-foldpress' ),
+										'',
+										'<div class="afp-segq afp-segq--2" role="radiogroup"><label><input type="radio" name="afp_mig_mode" form="afp-mig-none" data-mig-mode value="merge" checked><span><b>' . esc_html__( 'Merge', 'appstrdesign-foldpress' ) . '</b><small>' . esc_html__( 'Reuse folders with the same name', 'appstrdesign-foldpress' ) . '</small></span></label><label><input type="radio" name="afp_mig_mode" form="afp-mig-none" data-mig-mode value="new"><span><b>' . esc_html__( 'Separate', 'appstrdesign-foldpress' ) . '</b><small>' . esc_html__( 'Inside a new "import" folder', 'appstrdesign-foldpress' ) . '</small></span></label></div>'
+									);
+									echo '<label class="afp-set-row afp-set-row--toggle"><span class="afp-set-row__txt"><strong>' . esc_html__( 'Move files that already have a folder', 'appstrdesign-foldpress' ) . '</strong><small>' . esc_html__( 'Off: only files without a folder are placed. On: the imported folder wins.', 'appstrdesign-foldpress' ) . '</small></span><span class="afp-switch"><input type="checkbox" form="afp-mig-none" data-mig-replace><i></i></span></label>';
+									?>
+								</div>
+
+								<h3><?php esc_html_e( 'Export', 'appstrdesign-foldpress' ); ?></h3>
+								<div class="afp-card-box">
+									<?php
+									$base = admin_url( 'admin-post.php?action=foldpress_export' );
+									$exp  = array(
+										'json'     => array( __( 'FoldPress JSON', 'appstrdesign-foldpress' ), __( 'Complete backup: folder tree, file IDs and paths. Best for another FoldPress site.', 'appstrdesign-foldpress' ) ),
+										'csv'      => array( __( 'CSV with folder paths', 'appstrdesign-foldpress' ), __( 'One row per file: folder path, file path, ID and URL. Opens in Excel and Google Sheets.', 'appstrdesign-foldpress' ) ),
+										'filebird' => array( __( 'FileBird compatible CSV', 'appstrdesign-foldpress' ), __( 'The column layout of the FileBird export (id, name, parent, attachment_ids...), for the FileBird CSV import on this site or a copy of it.', 'appstrdesign-foldpress' ) ),
+									);
+									foreach ( $exp as $f => $e ) {
+										$this->row( $e[0], $e[1], '<a class="afp-btn" href="' . esc_url( wp_nonce_url( add_query_arg( 'format', $f, $base ), 'foldpress_export' ) ) . '"><span data-icon="download"></span><span>' . esc_html__( 'Download', 'appstrdesign-foldpress' ) . '</span></a>' );
+									}
+									?>
+								</div>
+
+								<h3><?php esc_html_e( 'Copy FoldPress folders into another plugin', 'appstrdesign-foldpress' ); ?></h3>
+								<p class="afp-set__lead"><?php esc_html_e( 'Writes your FoldPress folders and file assignments into the structure of the other plugin, so it shows them as soon as it is activated. FoldPress folders stay as they are.', 'appstrdesign-foldpress' ); ?></p>
+								<div class="afp-card-box">
+									<?php
+									$opts = '';
+									foreach ( FoldPress_Migrate::targets() as $k => $n ) {
+										$opts .= '<option value="' . esc_attr( $k ) . '">' . esc_html( $n ) . '</option>';
+									}
+									$this->row( __( 'Target plugin', 'appstrdesign-foldpress' ), __( 'The same options apply: merge or separate folder, move files that already have a folder.', 'appstrdesign-foldpress' ), '<span class="afp-mig__file"><select class="afp-select" form="afp-mig-none" data-mig-target>' . $opts . '</select><button type="button" class="afp-btn afp-btn--primary" data-mig-copy><span data-icon="upload"></span><span>' . esc_html__( 'Copy folders', 'appstrdesign-foldpress' ) . '</span></button></span>' );
+									?>
+								</div>
+
+								<div class="afp-conv__run afp-mig__run" data-mig-run hidden>
+									<div class="afp-conv__top"><strong data-mig-title></strong><span data-mig-count></span></div>
+									<div class="afp-progress"><i data-mig-bar></i></div>
+									<div class="afp-conv__meta"><span data-mig-pct>0%</span><span data-mig-meta></span></div>
+								</div>
+							</div>
 						</section>
 
 						<section class="afp-set__panel" data-panel="system">

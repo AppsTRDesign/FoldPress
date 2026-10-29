@@ -509,4 +509,107 @@
 		}
 		tabs.forEach( ( t ) => t.dataset.tab === 'optimize' && t.addEventListener( 'click', () => ! scan && doScan() ) );
 	}
+
+	/* ---------- Import / export (other plugins, files, copy into other plugins) ---------- */
+	const mig = form.querySelector( '[data-mig]' );
+	if ( mig ) {
+		const m = ( s ) => mig.querySelector( s );
+		const fmtM = ( s, ...a ) => a.reduce( ( out, v, i ) => out.replace( '%' + ( i + 1 ) + '$d', v ).replace( '%' + ( i + 1 ) + '$s', v ), s || '' );
+		const run = m( '[data-mig-run]' );
+		let busy = false;
+		const opts = () => ( { mode: ( mig.querySelector( '[data-mig-mode]:checked' ) || {} ).value || 'merge', replace: m( '[data-mig-replace]' ).checked ? 1 : 0 } );
+		const lock = ( on ) => {
+			busy = on;
+			mig.querySelectorAll( 'button' ).forEach( ( b ) => ( b.disabled = on || ( b.hasAttribute( 'data-mig-import' ) && ! m( '[data-mig-file]' ).files.length ) ) );
+		};
+		const progress = ( title, done, total, meta ) => {
+			if ( run.hidden ) {
+				run.hidden = false;
+				run.scrollIntoView( { block: 'nearest', behavior: 'smooth' } );
+			}
+			run.classList.toggle( 'is-done', total > 0 && done >= total );
+			const pct = total ? Math.round( ( done / total ) * 100 ) : 100;
+			m( '[data-mig-title]' ).textContent = title;
+			m( '[data-mig-count]' ).textContent = fmtM( T.migCount, done, total );
+			m( '[data-mig-bar]' ).style.width = pct + '%';
+			m( '[data-mig-pct]' ).textContent = pct + '%';
+			m( '[data-mig-meta]' ).textContent = meta || '';
+		};
+		const loop = ( title ) =>
+			ajax( 'migrate_run' ).then( ( d ) => {
+				progress( title, d.done, d.total );
+				return d.finished ? d : loop( title );
+			} );
+		/* data: FormData or object for migrate_prepare; copy = writing into another plugin. */
+		const start = ( data, copy ) => {
+			if ( busy ) {
+				return;
+			}
+			lock( true );
+			progress( T.migReading, 0, 0 );
+			const o = opts();
+			if ( data instanceof FormData ) {
+				data.append( 'mode', o.mode );
+				data.append( 'replace', o.replace );
+			} else {
+				Object.assign( data, o );
+			}
+			ajax( 'migrate_prepare', data )
+				.then( ( p ) => {
+					const row = ( label, val, cls = '' ) => `<li class="${ cls }"><span>${ esc( label ) }</span><b>${ esc( String( val ) ) }</b></li>`;
+					const body =
+						`<p class="afp-modal__text"><strong>${ esc( fmtM( T.migFromTo, p.label, p.target ) ) }</strong></p>` +
+						`<ul class="afp-mig__sum">${ row( T.migFolders, p.folders ) }${ row( T.migFiles, p.files ) }${ p.skipped ? row( T.migSkipped, p.skipped, 'is-warn' ) : '' }</ul>` +
+						( p.skipped ? `<p class="afp-modal__text afp-mig__note">${ esc( T.migSkipHint ) }</p>` : '' ) +
+						`<p class="afp-modal__text afp-mig__note">${ icon( 'info' ) }${ esc( T.migSafe ) }</p>`;
+					return modal( { title: copy ? T.copyTitle : T.migTitle, body, confirmText: T.migStart, iconName: copy ? 'upload' : 'download' } ).then( ( ok ) => {
+						if ( ! ok ) {
+							run.hidden = true;
+							return null;
+						}
+						const title = copy ? T.migCopying : T.migRunning;
+						progress( title, 0, p.files );
+						return loop( title ).then( ( d ) => {
+							const msg = fmtM( T.migDone, d.moved, d.folders );
+							progress( title, d.total, d.total, msg );
+							toast( msg );
+							if ( ! copy ) {
+								m( '[data-mig-meta]' ).innerHTML = `${ esc( msg ) } <a href="${ esc( T.managerUrl ) }">${ esc( T.openManager ) }</a>`;
+							}
+						} );
+					} );
+				} )
+				.catch( ( e ) => {
+					run.hidden = true;
+					alertBox( e.message );
+				} )
+				.then( () => lock( false ) );
+		};
+		mig.querySelectorAll( '[data-mig-source]' ).forEach( ( b ) => b.addEventListener( 'click', () => start( { kind: 'source', key: b.dataset.migSource }, false ) ) );
+		const file = m( '[data-mig-file]' );
+		file.addEventListener( 'change', () => {
+			m( '[data-mig-fname]' ).textContent = file.files.length ? file.files[ 0 ].name : m( '[data-mig-fname]' ).dataset.def;
+			m( '[data-mig-import]' ).disabled = busy || ! file.files.length;
+		} );
+		m( '[data-mig-fname]' ).dataset.def = m( '[data-mig-fname]' ).textContent;
+		m( '[data-mig-import]' ).addEventListener( 'click', () => {
+			if ( ! file.files.length ) {
+				return;
+			}
+			const fd = new FormData();
+			fd.append( 'kind', 'file' );
+			fd.append( 'file', file.files[ 0 ] );
+			start( fd, false );
+		} );
+		const copyBtn = m( '[data-mig-copy]' );
+		if ( copyBtn ) {
+			copyBtn.addEventListener( 'click', () => start( { kind: 'target', key: m( '[data-mig-target]' ).value }, true ) );
+		}
+		window.addEventListener( 'beforeunload', ( e ) => {
+			if ( busy ) {
+				e.preventDefault();
+				e.returnValue = T.migRunning;
+			}
+		} );
+	}
 } )();

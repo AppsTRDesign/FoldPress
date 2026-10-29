@@ -45,6 +45,8 @@ class FoldPress_Settings {
 			'replace_library'     => 1,
 			'replace_editor'      => 1,
 			'replace_code_editor' => 1,
+			'disable_file_edit'   => 0,
+			'disable_file_mods'   => 0,
 			'modal_integration'   => 1,
 			'modal_theme'         => 1,
 			'lightbox'            => 1,
@@ -108,7 +110,7 @@ class FoldPress_Settings {
 	public static function save( $in ) {
 		$d   = self::defaults();
 		$out = array();
-		foreach ( array( 'replace_library', 'replace_editor', 'replace_code_editor', 'modal_integration', 'modal_theme', 'lightbox', 'office_viewer', 'gdrive_on', 'dropbox_on', 'onedrive_on', 'dav_on', 'cloud_url', 'sanitize_names', 'lowercase_names' ) as $k ) {
+		foreach ( array( 'replace_library', 'replace_editor', 'replace_code_editor', 'disable_file_edit', 'disable_file_mods', 'modal_integration', 'modal_theme', 'lightbox', 'office_viewer', 'gdrive_on', 'dropbox_on', 'onedrive_on', 'dav_on', 'cloud_url', 'sanitize_names', 'lowercase_names' ) as $k ) {
 			$out[ $k ] = empty( $in[ $k ] ) ? 0 : 1;
 		}
 		$out['pagination']          = isset( $in['pagination'] ) && 'numbers' === $in['pagination'] ? 'numbers' : 'loadmore';
@@ -219,6 +221,50 @@ class FoldPress_Settings {
 		add_filter( 'intermediate_image_sizes_advanced', array( __CLASS__, 'sizes' ) );
 		add_filter( 'sanitize_file_name', array( __CLASS__, 'file_name' ), 5 );
 		add_filter( 'upload_dir', array( __CLASS__, 'upload_dir' ) );
+		add_filter( 'map_meta_cap', array( __CLASS__, 'lock_caps' ), 10, 2 );
+		add_filter( 'file_mod_allowed', array( __CLASS__, 'file_mods' ), 10, 2 );
+	}
+
+	/**
+	 * Code editors switched off in FoldPress or by DISALLOW_FILE_EDIT / DISALLOW_FILE_MODS.
+	 *
+	 * @return bool
+	 */
+	public static function file_edit_locked() {
+		return ( defined( 'DISALLOW_FILE_EDIT' ) && DISALLOW_FILE_EDIT ) || ( defined( 'DISALLOW_FILE_MODS' ) && DISALLOW_FILE_MODS )
+			|| self::get( 'disable_file_edit' ) || self::get( 'disable_file_mods' );
+	}
+
+	/**
+	 * Same rules as core map_meta_cap() for DISALLOW_FILE_EDIT / DISALLOW_FILE_MODS: the capabilities are
+	 * removed for everybody, so WordPress hides the menus and refuses the screens itself.
+	 * The FoldPress settings page (manage_options) stays available to switch it back on.
+	 *
+	 * @param string[] $caps Primitive caps.
+	 * @param string   $cap  Requested cap.
+	 * @return string[]
+	 */
+	public static function lock_caps( $caps, $cap ) {
+		$edit = array( 'edit_themes', 'edit_plugins', 'edit_files' );
+		$mods = array( 'install_plugins', 'install_themes', 'update_plugins', 'update_themes', 'delete_plugins', 'delete_themes', 'upload_plugins', 'upload_themes', 'update_core', 'install_languages', 'update_languages' );
+		if ( ( in_array( $cap, $edit, true ) && ( self::get( 'disable_file_edit' ) || self::get( 'disable_file_mods' ) ) ) || ( in_array( $cap, $mods, true ) && self::get( 'disable_file_mods' ) ) ) {
+			$caps[] = 'do_not_allow';
+		}
+		return $caps;
+	}
+
+	/**
+	 * Core checks this for updates, auto-updates and the file editors (wp_is_file_mod_allowed()).
+	 *
+	 * @param bool   $allowed Allowed.
+	 * @param string $context Context.
+	 * @return bool
+	 */
+	public static function file_mods( $allowed, $context ) {
+		if ( self::get( 'disable_file_mods' ) ) {
+			return false;
+		}
+		return 'capability_edit_themes' === $context && self::get( 'disable_file_edit' ) ? false : $allowed;
 	}
 
 	/**

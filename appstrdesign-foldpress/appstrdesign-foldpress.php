@@ -3,7 +3,7 @@
  * Plugin Name:       AppsTRDesign - FoldPress
  * Plugin URI:        https://wplugins.shop
  * Description:       Advanced AJAX media file manager with folders, drag and drop, bulk actions, context menu, ZIP/UNZIP and file type grouping. Replaces the default Media Library screens.
- * Version:           1.5.3
+ * Version:           1.6.1
  * Requires at least: 6.0
  * Requires PHP:      7.4
  * Author:            AppsTRDesign
@@ -18,7 +18,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'FOLDPRESS_VERSION', '1.5.3' );
+define( 'FOLDPRESS_VERSION', '1.6.1' );
 define( 'FOLDPRESS_FILE', __FILE__ );
 define( 'FOLDPRESS_DIR', plugin_dir_path( __FILE__ ) );
 define( 'FOLDPRESS_URL', plugin_dir_url( __FILE__ ) );
@@ -37,6 +37,7 @@ require_once FOLDPRESS_DIR . 'includes/class-foldpress-settings-page.php';
 require_once FOLDPRESS_DIR . 'includes/class-foldpress-code.php';
 require_once FOLDPRESS_DIR . 'includes/class-foldpress-preview.php';
 require_once FOLDPRESS_DIR . 'includes/class-foldpress-cloud.php';
+require_once FOLDPRESS_DIR . 'includes/class-foldpress-migrate.php';
 
 /**
  * Bootstrap.
@@ -73,6 +74,7 @@ function foldpress_init() {
 		new FoldPress_Code();
 		new FoldPress_Preview();
 		new FoldPress_Cloud();
+		new FoldPress_Migrate();
 	}
 }
 add_action( 'init', 'foldpress_init' );

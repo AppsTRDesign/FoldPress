@@ -986,7 +986,7 @@ msgstr ""
 msgid "Back to library"
 msgstr ""
 
-msgid "File editing is disabled on this site (DISALLOW_FILE_EDIT)."
+msgid "File editing is turned off on this site (FoldPress settings or wp-config.php)."
 msgstr ""
 
 msgid "Ctrl+S save · Ctrl+F find · Ctrl+H replace · Ctrl+G go to line · Ctrl+/ comment"
@@ -1175,6 +1175,39 @@ msgstr ""
 msgid "Could not rename the file on disk."
 msgstr ""
 
+msgid "Unknown source."
+msgstr ""
+
+msgid "The file is empty."
+msgstr ""
+
+msgid "The JSON file could not be read."
+msgstr ""
+
+msgid "JSON file"
+msgstr ""
+
+msgid "No folders were found in this file."
+msgstr ""
+
+msgid "CSV file"
+msgstr ""
+
+msgid "Unknown CSV format. Expected FoldPress or FileBird columns."
+msgstr ""
+
+msgid "Choose a JSON or CSV export file."
+msgstr ""
+
+msgid "The file is larger than 20 MB."
+msgstr ""
+
+msgid "The import expired. Start it again."
+msgstr ""
+
+msgid "%1$s import %2$s"
+msgstr ""
+
 msgid "Filter by folder"
 msgstr ""
 
@@ -1343,6 +1376,48 @@ msgstr ""
 msgid "was"
 msgstr ""
 
+msgid "Import folders?"
+msgstr ""
+
+msgid "Copy folders?"
+msgstr ""
+
+msgid "%1$s to %2$s"
+msgstr ""
+
+msgid "Files to place"
+msgstr ""
+
+msgid "Not found on this site"
+msgstr ""
+
+msgid "Files that are not in this media library are skipped. Upload them first, then import again."
+msgstr ""
+
+msgid "Media files are not moved or changed. Only folder assignments are written."
+msgstr ""
+
+msgid "Start"
+msgstr ""
+
+msgid "Importing folders"
+msgstr ""
+
+msgid "Copying folders"
+msgstr ""
+
+msgid "Reading data..."
+msgstr ""
+
+msgid "Finished: %1$d files placed in %2$d folders."
+msgstr ""
+
+msgid "%1$d / %2$d files"
+msgstr ""
+
+msgid "Open the file manager"
+msgstr ""
+
 msgid "Settings were reset."
 msgstr ""
 
@@ -1379,6 +1454,9 @@ msgstr ""
 msgid "Cloud"
 msgstr ""
 
+msgid "Import / Export"
+msgstr ""
+
 msgid "System"
 msgstr ""
 
@@ -1401,6 +1479,18 @@ msgid "Replace the Theme and Plugin File Editors"
 msgstr ""
 
 msgid "Use the FoldPress code editor: file tree, tabs, syntax highlighting for PHP, CSS, JS, HTML, Java, C#, C/C++ and more, find & replace, documentation lookup."
+msgstr ""
+
+msgid "Turn off the code editors"
+msgstr ""
+
+msgid "Works like DISALLOW_FILE_EDIT: the Theme and Plugin File Editors, the FoldPress code editor and their menus are removed for every user. Recommended for live sites."
+msgstr ""
+
+msgid "Lock theme and plugin management"
+msgstr ""
+
+msgid "Works like DISALLOW_FILE_MODS: installing, uploading, updating and deleting themes and plugins (and core updates) is turned off and the \"Add New\" menus disappear. Activating and deactivating still works. Switch it off here before updating."
 msgstr ""
 
 msgid "Folders in the media modal"
@@ -1734,6 +1824,87 @@ msgid "iCloud Drive"
 msgstr ""
 
 msgid "Apple does not offer a public web API for iCloud Drive files, so a direct integration is not possible. Download the files on your device and upload them, or sync them to a WebDAV-capable service."
+msgstr ""
+
+msgid "Bring your folders over from another media folder plugin, move them between sites, or hand them to another plugin. Only folder assignments are written; media files are never moved, renamed or deleted."
+msgstr ""
+
+msgid "Import from another plugin"
+msgstr ""
+
+msgid "No folders from other plugins were found on this site."
+msgstr ""
+
+msgid "Supported: FileBird, Real Media Library, HappyFiles, Folders (Premio), WP Media Folder, Enhanced Media Library, Media Library Folders, Wicked Folders, Media Library Assistant, Mediamatic, WP Media Folders. Their data is read even when the plugin is deactivated."
+msgstr ""
+
+msgid "Import from a file"
+msgstr ""
+
+msgid "Export file"
+msgstr ""
+
+msgid "FoldPress JSON / CSV, FileBird CSV or any JSON / CSV with folder names and file paths. Files are matched by ID on the same site, otherwise by file path and name."
+msgstr ""
+
+msgid "Choose file"
+msgstr ""
+
+msgid "Import options"
+msgstr ""
+
+msgid "Merge"
+msgstr ""
+
+msgid "Reuse folders with the same name"
+msgstr ""
+
+msgid "Separate"
+msgstr ""
+
+msgid "Inside a new \"import\" folder"
+msgstr ""
+
+msgid "Move files that already have a folder"
+msgstr ""
+
+msgid "Off: only files without a folder are placed. On: the imported folder wins."
+msgstr ""
+
+msgid "Export"
+msgstr ""
+
+msgid "FoldPress JSON"
+msgstr ""
+
+msgid "Complete backup: folder tree, file IDs and paths. Best for another FoldPress site."
+msgstr ""
+
+msgid "CSV with folder paths"
+msgstr ""
+
+msgid "One row per file: folder path, file path, ID and URL. Opens in Excel and Google Sheets."
+msgstr ""
+
+msgid "FileBird compatible CSV"
+msgstr ""
+
+msgid "The column layout of the FileBird export (id, name, parent, attachment_ids...), for the FileBird CSV import on this site or a copy of it."
+msgstr ""
+
+msgid "Copy FoldPress folders into another plugin"
+msgstr ""
+
+msgid "Writes your FoldPress folders and file assignments into the structure of the other plugin, so it shows them as soon as it is activated. FoldPress folders stay as they are."
+msgstr ""
+
+msgid "Target plugin"
+msgstr ""
+
+msgid "The same options apply: merge or separate folder, move files that already have a folder."
+msgstr ""
+
+msgid "Copy folders"
 msgstr ""
 
 msgid "Upload size limit"

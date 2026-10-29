@@ -132,6 +132,30 @@
 		};
 	}
 
+	/*
+	 * Live uploads. Core Query only watches wp.Uploader.queue when every query arg is one it knows
+	 * (see Query.initialize in media-models.js). The folder filter added a foreign arg, so new uploads
+	 * never reached the grid, looked unselected and could not be picked until the library reloaded.
+	 * Each upload is stamped with its target folder and the queue is observed again with a folder filter.
+	 */
+	const QUERY = wp.media.model && wp.media.model.Query;
+	const CORE_ARGS = [ 's', 'order', 'orderby', 'posts_per_page', 'post_mime_type', 'post_parent', 'author' ];
+	const OUR_ARGS = [ 'foldpress_folder', 'ignore' ];
+	if ( QUERY && wp.Uploader && wp.Uploader.queue ) {
+		wp.Uploader.queue.on( 'add', ( m ) => m.set( { foldpress_folder: store.current > 0 ? store.current : 0 }, { silent: true } ) );
+		const origQuery = QUERY.prototype.initialize;
+		QUERY.prototype.initialize = function () {
+			origQuery.apply( this, arguments );
+			const extra = Object.keys( this.args || {} ).filter( ( k ) => ! CORE_ARGS.includes( k ) );
+			if ( ! extra.length || extra.some( ( k ) => ! OUR_ARGS.includes( k ) ) ) {
+				return; // Core already observes, or another plugin's arg: leave as is.
+			}
+			const folder = this.args.foldpress_folder;
+			this.filters.foldpress = ( a ) => folder === undefined || +folder < 0 || +a.get( 'foldpress_folder' ) === +folder;
+			this.observe( wp.Uploader.queue );
+		};
+	}
+
 	/* ---------- Mobile select (lives in core toolbar) ---------- */
 	const FolderSelect = wp.media.View.extend( {
 		tagName: 'select',
@@ -270,8 +294,11 @@
 		},
 
 		fpRequery() {
-			// Changing a throwaway prop forces a fresh server query (same trick core uses).
-			this.collection.props.set( { ignore: Date.now() } );
+			// Core builds a fresh Query on every _requery(); a throwaway prop would also stop live uploads.
+			if ( this.collection.props.get( 'query' ) ) {
+				this.collection.props.unset( 'ignore', { silent: true } );
+				this.collection._requery();
+			}
 		},
 	} );
 

@@ -986,8 +986,8 @@ msgstr "Klasik düzenleyici"
 msgid "Back to library"
 msgstr "Kütüphaneye dön"
 
-msgid "File editing is disabled on this site (DISALLOW_FILE_EDIT)."
-msgstr "Bu sitede dosya düzenleme kapalı (DISALLOW_FILE_EDIT)."
+msgid "File editing is turned off on this site (FoldPress settings or wp-config.php)."
+msgstr "Bu sitede dosya düzenleme kapalı (FoldPress ayarları veya wp-config.php)."
 
 msgid "Ctrl+S save · Ctrl+F find · Ctrl+H replace · Ctrl+G go to line · Ctrl+/ comment"
 msgstr "Ctrl+S kaydet · Ctrl+F bul · Ctrl+H değiştir · Ctrl+G satıra git · Ctrl+/ yorum satırı"
@@ -1175,6 +1175,39 @@ msgstr "Bu adda bir dosya zaten var."
 msgid "Could not rename the file on disk."
 msgstr "Dosya diskte yeniden adlandırılamadı."
 
+msgid "Unknown source."
+msgstr "Bilinmeyen kaynak."
+
+msgid "The file is empty."
+msgstr "Dosya boş."
+
+msgid "The JSON file could not be read."
+msgstr "JSON dosyası okunamadı."
+
+msgid "JSON file"
+msgstr "JSON dosyası"
+
+msgid "No folders were found in this file."
+msgstr "Bu dosyada klasör bulunamadı."
+
+msgid "CSV file"
+msgstr "CSV dosyası"
+
+msgid "Unknown CSV format. Expected FoldPress or FileBird columns."
+msgstr "Bilinmeyen CSV biçimi. FoldPress veya FileBird sütunları bekleniyor."
+
+msgid "Choose a JSON or CSV export file."
+msgstr "Bir JSON veya CSV dışa aktarma dosyası seçin."
+
+msgid "The file is larger than 20 MB."
+msgstr "Dosya 20 MB'tan büyük."
+
+msgid "The import expired. Start it again."
+msgstr "İçe aktarmanın süresi doldu. Yeniden başlatın."
+
+msgid "%1$s import %2$s"
+msgstr "%1$s içe aktarma %2$s"
+
 msgid "Filter by folder"
 msgstr "Klasöre göre filtrele"
 
@@ -1343,6 +1376,48 @@ msgstr "Değiştirildi"
 msgid "was"
 msgstr "önceki"
 
+msgid "Import folders?"
+msgstr "Klasörler içe aktarılsın mı?"
+
+msgid "Copy folders?"
+msgstr "Klasörler kopyalansın mı?"
+
+msgid "%1$s to %2$s"
+msgstr "%1$s → %2$s"
+
+msgid "Files to place"
+msgstr "Yerleştirilecek dosya"
+
+msgid "Not found on this site"
+msgstr "Bu sitede bulunamadı"
+
+msgid "Files that are not in this media library are skipped. Upload them first, then import again."
+msgstr "Bu ortam kütüphanesinde olmayan dosyalar atlanır. Önce onları yükleyin, sonra yeniden içe aktarın."
+
+msgid "Media files are not moved or changed. Only folder assignments are written."
+msgstr "Ortam dosyaları taşınmaz veya değiştirilmez. Yalnızca klasör atamaları yazılır."
+
+msgid "Start"
+msgstr "Başlat"
+
+msgid "Importing folders"
+msgstr "Klasörler içe aktarılıyor"
+
+msgid "Copying folders"
+msgstr "Klasörler kopyalanıyor"
+
+msgid "Reading data..."
+msgstr "Veriler okunuyor..."
+
+msgid "Finished: %1$d files placed in %2$d folders."
+msgstr "Tamamlandı: %1$d dosya %2$d klasöre yerleştirildi."
+
+msgid "%1$d / %2$d files"
+msgstr "%1$d / %2$d dosya"
+
+msgid "Open the file manager"
+msgstr "Dosya yöneticisini aç"
+
 msgid "Settings were reset."
 msgstr "Ayarlar sıfırlandı."
 
@@ -1379,6 +1454,9 @@ msgstr "WebP / AVIF"
 msgid "Cloud"
 msgstr "Bulut"
 
+msgid "Import / Export"
+msgstr "İçe / Dışa Aktar"
+
 msgid "System"
 msgstr "Sistem"
 
@@ -1402,6 +1480,18 @@ msgstr "Tema ve Eklenti Dosya Düzenleyicilerinin yerini al"
 
 msgid "Use the FoldPress code editor: file tree, tabs, syntax highlighting for PHP, CSS, JS, HTML, Java, C#, C/C++ and more, find & replace, documentation lookup."
 msgstr "FoldPress kod düzenleyicisini kullan: dosya ağacı, sekmeler, PHP, CSS, JS, HTML, Java, C#, C/C++ ve daha fazlası için sözdizimi renklendirme, bul ve değiştir, belge arama."
+
+msgid "Turn off the code editors"
+msgstr "Kod düzenleyicileri kapat"
+
+msgid "Works like DISALLOW_FILE_EDIT: the Theme and Plugin File Editors, the FoldPress code editor and their menus are removed for every user. Recommended for live sites."
+msgstr "DISALLOW_FILE_EDIT gibi çalışır: Tema ve Eklenti Dosya Düzenleyicileri, FoldPress kod düzenleyicisi ve menüleri tüm kullanıcılar için kaldırılır. Canlı siteler için önerilir."
+
+msgid "Lock theme and plugin management"
+msgstr "Tema ve eklenti yönetimini kilitle"
+
+msgid "Works like DISALLOW_FILE_MODS: installing, uploading, updating and deleting themes and plugins (and core updates) is turned off and the \"Add New\" menus disappear. Activating and deactivating still works. Switch it off here before updating."
+msgstr "DISALLOW_FILE_MODS gibi çalışır: tema ve eklenti kurma, yükleme, güncelleme ve silme (ve WordPress güncellemeleri) kapanır, \"Yeni Ekle\" menüleri kalkar. Etkinleştirme ve devre dışı bırakma çalışmaya devam eder. Güncellemeden önce buradan kapatın."
 
 msgid "Folders in the media modal"
 msgstr "Ortam penceresinde klasörler"
@@ -1735,6 +1825,87 @@ msgstr "iCloud Drive"
 
 msgid "Apple does not offer a public web API for iCloud Drive files, so a direct integration is not possible. Download the files on your device and upload them, or sync them to a WebDAV-capable service."
 msgstr "Apple, iCloud Drive dosyaları için herkese açık bir web API'si sunmuyor; bu nedenle doğrudan entegrasyon mümkün değil. Dosyaları cihazınıza indirip yükleyin veya WebDAV destekli bir servise eşitleyin."
+
+msgid "Bring your folders over from another media folder plugin, move them between sites, or hand them to another plugin. Only folder assignments are written; media files are never moved, renamed or deleted."
+msgstr "Klasörlerinizi başka bir ortam klasörü eklentisinden alın, siteler arasında taşıyın veya başka bir eklentiye aktarın. Yalnızca klasör atamaları yazılır; ortam dosyaları asla taşınmaz, yeniden adlandırılmaz veya silinmez."
+
+msgid "Import from another plugin"
+msgstr "Başka bir eklentiden içe aktar"
+
+msgid "No folders from other plugins were found on this site."
+msgstr "Bu sitede başka eklentilere ait klasör bulunamadı."
+
+msgid "Supported: FileBird, Real Media Library, HappyFiles, Folders (Premio), WP Media Folder, Enhanced Media Library, Media Library Folders, Wicked Folders, Media Library Assistant, Mediamatic, WP Media Folders. Their data is read even when the plugin is deactivated."
+msgstr "Desteklenenler: FileBird, Real Media Library, HappyFiles, Folders (Premio), WP Media Folder, Enhanced Media Library, Media Library Folders, Wicked Folders, Media Library Assistant, Mediamatic, WP Media Folders. Eklenti devre dışı olsa bile verileri okunur."
+
+msgid "Import from a file"
+msgstr "Dosyadan içe aktar"
+
+msgid "Export file"
+msgstr "Dışa aktarma dosyası"
+
+msgid "FoldPress JSON / CSV, FileBird CSV or any JSON / CSV with folder names and file paths. Files are matched by ID on the same site, otherwise by file path and name."
+msgstr "FoldPress JSON / CSV, FileBird CSV veya klasör adları ve dosya yolları içeren herhangi bir JSON / CSV. Dosyalar aynı sitede ID ile, aksi halde dosya yolu ve adıyla eşleştirilir."
+
+msgid "Choose file"
+msgstr "Dosya seç"
+
+msgid "Import options"
+msgstr "İçe aktarma seçenekleri"
+
+msgid "Merge"
+msgstr "Birleştir"
+
+msgid "Reuse folders with the same name"
+msgstr "Aynı adlı klasörleri kullan"
+
+msgid "Separate"
+msgstr "Ayrı"
+
+msgid "Inside a new \"import\" folder"
+msgstr "Yeni bir \"içe aktarma\" klasörüne"
+
+msgid "Move files that already have a folder"
+msgstr "Klasörü olan dosyaları da taşı"
+
+msgid "Off: only files without a folder are placed. On: the imported folder wins."
+msgstr "Kapalı: yalnızca klasörsüz dosyalar yerleştirilir. Açık: içe aktarılan klasör geçerli olur."
+
+msgid "Export"
+msgstr "Dışa aktar"
+
+msgid "FoldPress JSON"
+msgstr "FoldPress JSON"
+
+msgid "Complete backup: folder tree, file IDs and paths. Best for another FoldPress site."
+msgstr "Tam yedek: klasör ağacı, dosya ID'leri ve yolları. Başka bir FoldPress sitesi için en iyisi."
+
+msgid "CSV with folder paths"
+msgstr "Klasör yollu CSV"
+
+msgid "One row per file: folder path, file path, ID and URL. Opens in Excel and Google Sheets."
+msgstr "Dosya başına bir satır: klasör yolu, dosya yolu, ID ve adres. Excel ve Google E-Tablolar'da açılır."
+
+msgid "FileBird compatible CSV"
+msgstr "FileBird uyumlu CSV"
+
+msgid "The column layout of the FileBird export (id, name, parent, attachment_ids...), for the FileBird CSV import on this site or a copy of it."
+msgstr "FileBird dışa aktarmasının sütun düzeni (id, name, parent, attachment_ids...); bu sitede veya kopyasında FileBird CSV içe aktarma için."
+
+msgid "Copy FoldPress folders into another plugin"
+msgstr "FoldPress klasörlerini başka bir eklentiye kopyala"
+
+msgid "Writes your FoldPress folders and file assignments into the structure of the other plugin, so it shows them as soon as it is activated. FoldPress folders stay as they are."
+msgstr "FoldPress klasörlerinizi ve dosya atamalarınızı diğer eklentinin kendi yapısına yazar; eklenti etkinleştirildiği anda onları gösterir. FoldPress klasörleri olduğu gibi kalır."
+
+msgid "Target plugin"
+msgstr "Hedef eklenti"
+
+msgid "The same options apply: merge or separate folder, move files that already have a folder."
+msgstr "Aynı seçenekler geçerlidir: birleştir veya ayrı klasör, klasörü olan dosyaları da taşı."
+
+msgid "Copy folders"
+msgstr "Klasörleri kopyala"
 
 msgid "Upload size limit"
 msgstr "Yükleme boyutu sınırı"

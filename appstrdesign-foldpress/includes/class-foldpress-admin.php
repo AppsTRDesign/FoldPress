@@ -176,7 +176,7 @@ class FoldPress_Admin {
 				'pagination'  => FoldPress_Settings::get( 'pagination' ),
 				'perPage'     => (int) FoldPress_Settings::get( 'per_page' ),
 				'defaultView' => FoldPress_Settings::get( 'default_view' ),
-				'codeExt'     => FoldPress_Code::MEDIA_EXT,
+				'codeExt'     => FoldPress_Settings::file_edit_locked() ? array() : FoldPress_Code::MEDIA_EXT,
 				'createExt'   => FoldPress_Ajax::creatable_ext(),
 				'cloud'       => FoldPress_Cloud::client_config(),
 				'cloudSetup'  => current_user_can( 'manage_options' ) ? FoldPress_Settings_Page::url() . '#cloud' : '',

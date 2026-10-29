@@ -172,6 +172,9 @@ class FoldPress_Code {
 	 * @return bool
 	 */
 	private static function can( $type, $target ) {
+		if ( FoldPress_Settings::file_edit_locked() ) {
+			return false;
+		}
 		if ( 'theme' === $type ) {
 			return current_user_can( 'edit_themes' );
 		}
@@ -552,7 +555,7 @@ class FoldPress_Code {
 					'https://api.wordpress.org/core/handbook/1.0/'
 				),
 				'phpDocs'    => 'https://www.php.net/manual/' . ( 0 === strpos( get_user_locale(), 'tr' ) ? 'tr' : 'en' ) . '/function.',
-				'disabled'   => defined( 'DISALLOW_FILE_EDIT' ) && DISALLOW_FILE_EDIT,
+				'disabled'   => FoldPress_Settings::file_edit_locked(),
 				'i18n'       => array(
 					'title'          => __( 'Code Editor', 'appstrdesign-foldpress' ),
 					'theme'          => __( 'Theme', 'appstrdesign-foldpress' ),
@@ -609,7 +612,7 @@ class FoldPress_Code {
 					'close'          => __( 'Close', 'appstrdesign-foldpress' ),
 					'classic'        => __( 'Classic editor', 'appstrdesign-foldpress' ),
 					'library'        => __( 'Back to library', 'appstrdesign-foldpress' ),
-					'disabled'       => __( 'File editing is disabled on this site (DISALLOW_FILE_EDIT).', 'appstrdesign-foldpress' ),
+					'disabled'       => __( 'File editing is turned off on this site (FoldPress settings or wp-config.php).', 'appstrdesign-foldpress' ),
 					'shortcuts'      => __( 'Ctrl+S save · Ctrl+F find · Ctrl+H replace · Ctrl+G go to line · Ctrl+/ comment', 'appstrdesign-foldpress' ),
 					'activeTheme'    => __( 'Active theme', 'appstrdesign-foldpress' ),
 					'activePlugin'   => __( 'Active plugin', 'appstrdesign-foldpress' ),

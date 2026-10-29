@@ -1,10 +1,10 @@
 === AppsTRDesign - FoldPress ===
 Contributors: appstrdesign
-Tags: media library, folders, file manager, webp, code editor
+Tags: media library, folders, file manager, filebird alternative, media folders
 Requires at least: 6.0
 Tested up to: 6.8
 Requires PHP: 7.4
-Stable tag: 1.5.3
+Stable tag: 1.6.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -77,9 +77,23 @@ Pro media and file manager for WordPress: folders, drag and drop, bulk actions, 
 * Redesigned Insert from URL with "Download to media library" and live progress.
 * Redesigned fields, selects, checkboxes and alignment buttons in attachment details, gallery and playlist settings.
 
+= Import, export and migration =
+
+* One-click import of folders and file assignments from FileBird, Real Media Library, HappyFiles, Folders (Premio), WP Media Folder, Enhanced Media Library, Media Library Folders, Wicked Folders, Media Library Assistant, Mediamatic and WP Media Folders. Their data is read from the database, even when the other plugin is deactivated.
+* Export as FoldPress JSON (full backup with file paths), CSV with folder paths (Excel / Google Sheets) or FileBird compatible CSV.
+* Import FoldPress JSON / CSV, FileBird CSV and generic JSON / CSV files. Files are matched by ID on the same site, otherwise by file path and name, so folders move between sites too.
+* Copy FoldPress folders into another plugin's own structure (FileBird, HappyFiles, Folders, WP Media Folder, Enhanced Media Library and more), so switching plugins never loses your organisation.
+* Merge into existing folders or import into a separate folder; keep or overwrite existing assignments. Runs in batches with a progress bar; media files are never moved or changed.
+
+= Security switches =
+
+* Turn off the code editors: works like DISALLOW_FILE_EDIT. The Theme and Plugin File Editors, the FoldPress code editor and their menus are removed for every user.
+* Lock theme and plugin management: works like DISALLOW_FILE_MODS. Installing, uploading, updating and deleting themes and plugins is turned off and the "Add New" menus disappear.
+* Both can be switched back on from FoldPress > Settings at any time; the wp-config.php constants are respected as well.
+
 = Settings =
 
-* Tabbed settings page: General, Uploads, File Types, Image Sizes, WebP / AVIF, Cloud and System.
+* Tabbed settings page: General, Uploads, File Types, Image Sizes, WebP / AVIF, Cloud, Import / Export and System.
 * Step-by-step cloud setup with copy buttons for origins, domains and redirect URIs, plus a WebDAV connection test.
 * Unsaved-changes bar and a discard dialog that lists every changed setting by name with its old and new value.
 
@@ -104,6 +118,18 @@ ZipArchive is required for ZIP features; GD or Imagick with WebP / AVIF support 
 = Are files moved when I put them into folders? =
 
 No. Folders are virtual, so URLs never change. Only the optional physical rename touches files, and it updates every link to them.
+
+= Can I switch from FileBird, Real Media Library, HappyFiles or another folder plugin? =
+
+Yes. Open FoldPress > Settings > Import / Export. Every detected plugin is listed with its folder and file count; one click imports the folder tree and the file assignments. The other plugin can stay installed or be removed afterwards.
+
+= Can I go back to another plugin later? =
+
+Yes. "Copy FoldPress folders into another plugin" writes your folders into the structure of FileBird, HappyFiles, Folders, WP Media Folder, Enhanced Media Library and others, so they show up there as soon as that plugin is active. A FileBird compatible CSV export is available too.
+
+= Can I move my folders to another site? =
+
+Export FoldPress JSON on the old site and import it on the new one. Files are matched by their path in the uploads folder, so the media has to be on the new site first (for example after a migration or a media import).
 
 = Can I go back to the classic WordPress screens? =
 
@@ -141,6 +167,10 @@ Folders and settings. Your media files and the WebP / AVIF backups are kept.
 16. Gallery editing with the folder panel and redesigned gallery settings.
 17. Cloud import settings with step-by-step setup.
 18. Unsaved-changes dialog listing every changed setting.
+19. Import / Export: plugins detected on the site, import from a file, import options and export formats.
+20. Import summary before starting: source, target, folders and files.
+21. Copying FoldPress folders into another plugin (FileBird) with progress.
+22. Security switches: turn off the code editors and lock theme / plugin management.
 
 == External services ==
 
@@ -152,6 +182,17 @@ FoldPress works fully offline. One optional feature uses an external service:
 The code editor's "Look up" button opens the WordPress.org developer documentation (api.wordpress.org) in a new tab, exactly like the core file editor.
 
 == Changelog ==
+
+= 1.6.1 =
+* Media modal: uploaded files appear in the library at once and are selected automatically (Add Media, featured image, Create gallery, Add to gallery), also while a folder is open. No more switching folders to see a new upload.
+
+= 1.6.0 =
+* New Settings tab "Import / Export".
+* Import folders from FileBird, Real Media Library, HappyFiles, Folders (Premio), WP Media Folder, Enhanced Media Library, Media Library Folders, Wicked Folders, Media Library Assistant, Mediamatic and WP Media Folders (works with the plugin deactivated).
+* Export FoldPress JSON, CSV with folder paths and FileBird compatible CSV; import FoldPress, FileBird and generic JSON / CSV files with ID, path and file name matching.
+* Copy FoldPress folders into FileBird, HappyFiles, Folders, WP Media Folder, Enhanced Media Library and other plugins.
+* New setting "Turn off the code editors" (like DISALLOW_FILE_EDIT) and "Lock theme and plugin management" (like DISALLOW_FILE_MODS).
+* The FoldPress code editor now honours DISALLOW_FILE_EDIT for media text files too.
 
 = 1.5.3 =
 * URL / cloud import: follows redirects and meta refresh pages, takes the real file name from Content-Disposition or the final address, detects the extension from the content type.
